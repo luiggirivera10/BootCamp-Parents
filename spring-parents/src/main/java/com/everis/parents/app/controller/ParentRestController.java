@@ -1,7 +1,7 @@
 package com.everis.parents.app.controller;
 
 import com.everis.parents.app.bean.Parennt;
-import com.everis.parents.app.repository.ParenRepository;
+import com.everis.parents.app.service.ParentService;
 import java.util.Date;
 import javax.validation.Valid;
 import org.slf4j.Logger;
@@ -27,14 +27,14 @@ import reactor.core.publisher.Mono;
 public class ParentRestController {
 
   @Autowired
- private ParenRepository repos;
+ private ParentService repos;
   private static final Logger log = LoggerFactory.getLogger(ParentRestController.class);
   
   /**
    * .
    * */
   @GetMapping("/parents")
- public Flux<Parennt> index() {
+ public Flux<Parennt> findAll() {
     Flux<Parennt> parennts = repos.findAll().map(parent -> {
       parent.setFullname(parent.getFullname().toUpperCase());
       return parent;
@@ -46,7 +46,7 @@ public class ParentRestController {
    * .
    * */ 
   @GetMapping("/parents/{id}")
- public Mono<Parennt> show(@PathVariable String id) {
+ public Mono<Parennt> findById(@PathVariable String id) {
     Flux<Parennt> parennts = repos.findAll();
     Mono<Parennt> parennt = parennts.filter(s -> s.getId().equals(id)).next()
         .doOnNext(stu -> log.info(stu.getFullname()));
@@ -99,6 +99,11 @@ public class ParentRestController {
   @GetMapping("/parents/fname/{fullname}")
  public Flux<Parennt> findByName(@PathVariable(value = "fullname") String fullname) {
     return repos.findByFullname(fullname);
+  }
+
+  @GetMapping("/students/nombre/{fullname}")
+  public Mono<Parennt> obtenerByName(@PathVariable ("fullname") String fullname) {
+    return repos.obtenerPorName(fullname);
   }
 
   /**

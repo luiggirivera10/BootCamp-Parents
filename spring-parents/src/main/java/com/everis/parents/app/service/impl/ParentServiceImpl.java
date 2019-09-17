@@ -6,9 +6,11 @@ import com.everis.parents.app.service.ParentService;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Service
 public class ParentServiceImpl implements ParentService {
  
   @Autowired
@@ -48,6 +50,11 @@ public class ParentServiceImpl implements ParentService {
   @Override
 public Flux<Parennt> findByBirthdateBetween(Date birthdate, Date birthdate1) {
     return parenRepository.findByBirthdateBetween(birthdate, birthdate1);
+  }
+
+  @Override
+  public Mono<Parennt> obtenerPorName(String fullname) {
+    return parenRepository.obtenerPorName(fullname);
   }
 
 

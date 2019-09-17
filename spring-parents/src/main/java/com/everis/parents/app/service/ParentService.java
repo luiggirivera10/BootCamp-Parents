@@ -20,4 +20,6 @@ public interface ParentService {
   public Flux<Parennt> findByFullname(String fullname);
 
   public Flux<Parennt> findByBirthdateBetween(Date birthdate, Date birthdate1);
+
+  public Mono<Parennt> obtenerPorName(String fullname);
 }
