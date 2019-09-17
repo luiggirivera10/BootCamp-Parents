@@ -1,0 +1,186 @@
+con = new Mongo()
+db = conn.getDB("Students")
+db.createCollection("parents")
+
+db.parents.insert([
+{
+"_id" : ObjectId("5d8101c800eb36356c23c437"),
+"fullname" : "Carmen",
+"gender" : "Femenino",
+"birthdate" : ISODate("2019-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20190711",
+"createdAt" : ISODate("2019-09-17T15:54:48.526Z"),
+"idFamily" : "2"
+},
+{
+"_id" : ObjectId("5d8101eb00eb36356c23c438"),
+"fullname" : "Solangel",
+"gender" : "Femenino",
+"birthdate" : ISODate("2018-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20180711",
+"createdAt" : ISODate("2019-09-17T15:55:23.034Z"),
+"idFamily" : "1"
+},
+{
+"_id" : ObjectId("5d8101f800eb36356c23c439"),
+"fullname" : "Fernanda",
+"gender" : "Femenino",
+"birthdate" : ISODate("2017-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20170711",
+"createdAt" : ISODate("2019-09-17T15:55:36.324Z"),
+"idFamily" : "4"
+},
+{
+"_id" : ObjectId("5d81020600eb36356c23c43a"),
+"fullname" : "Mariana",
+"gender" : "Femenino",
+"birthdate" : ISODate("2016-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20160711",
+"createdAt" : ISODate("2019-09-17T15:55:50.817Z"),
+"idFamily" : "5"
+},
+{
+"_id" : ObjectId("5d81021400eb36356c23c43b"),
+"fullname" : "Rocio",
+"gender" : "Femenino",
+"birthdate" : ISODate("2015-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20150711",
+"createdAt" : ISODate("2019-09-17T15:56:04.158Z"),
+"idFamily" : "6"
+},
+{
+"_id" : ObjectId("5d81025500eb36356c23c43e"),
+"fullname" : "Sarai",
+"gender" : "Femenino",
+"birthdate" : ISODate("2014-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20140711",
+"createdAt" : ISODate("2019-09-17T15:57:09.574Z"),
+"idFamily" : "7"
+},
+{
+"_id" : ObjectId("5d81026800eb36356c23c43f"),
+"fullname" : "Flor",
+"gender" : "Femenino",
+"birthdate" : ISODate("2013-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20130711",
+"createdAt" : ISODate("2019-09-17T15:57:28.746Z"),
+"idFamily" : "8"
+},
+{
+"_id" : ObjectId("5d81027600eb36356c23c440"),
+"fullname" : "Ana",
+"gender" : "Femenino",
+"birthdate" : ISODate("2012-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20120711",
+"createdAt" : ISODate("2019-09-17T15:57:42.879Z"),
+"idFamily" : "9"
+},
+{
+"_id" : ObjectId("5d81028c00eb36356c23c441"),
+"fullname" : "Doris",
+"gender" : "Femenino",
+"birthdate" : ISODate("2011-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20110711",
+"createdAt" : ISODate("2019-09-17T15:58:04.059Z"),
+"idFamily" : "10"
+},
+{
+"_id" : ObjectId("5d81029900eb36356c23c442"),
+"fullname" : "Lucia",
+"gender" : "Femenino",
+"birthdate" : ISODate("2010-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20100711",
+"createdAt" : ISODate("2019-09-17T15:58:17.461Z"),
+"idFamily" : "11"
+},
+{
+"_id" : ObjectId("5d8102b100eb36356c23c443"),
+"fullname" : "Hernesto",
+"gender" : "Masculino",
+"birthdate" : ISODate("2009-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20090711",
+"createdAt" : ISODate("2019-09-17T15:58:41.444Z"),
+"idFamily" : "12"
+},
+{
+"_id" : ObjectId("5d8102c100eb36356c23c444"),
+"fullname" : "Hector",
+"gender" : "Masculino",
+"birthdate" : ISODate("2008-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20080711",
+"createdAt" : ISODate("2019-09-17T15:58:57.542Z"),
+"idFamily" : "13"
+},
+{
+"_id" : ObjectId("5d8102d100eb36356c23c445"),
+"fullname" : "Carlos",
+"gender" : "Masculino",
+"birthdate" : ISODate("2007-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20070711",
+"createdAt" : ISODate("2019-09-17T15:59:13.587Z"),
+"idFamily" : "14"
+},
+{
+"_id" : ObjectId("5d8102e700eb36356c23c446"),
+"fullname" : "Ronaldo",
+"gender" : "Masculino",
+"birthdate" : ISODate("2006-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20060711",
+"createdAt" : ISODate("2019-09-17T15:59:35.539Z"),
+"idFamily" : "15"
+},
+{
+"_id" : ObjectId("5d81042200eb36356c23c447"),
+"fullname" : "David",
+"gender" : "Masculino",
+"birthdate" : ISODate("2005-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20050711",
+"createdAt" : ISODate("2019-09-17T16:04:50.904Z"),
+"idFamily" : "16"
+},
+{
+"_id" : ObjectId("5d81042e00eb36356c23c448"),
+"fullname" : "Daniel",
+"gender" : "Masculino",
+"birthdate" : ISODate("2004-07-11T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20040711",
+"createdAt" : ISODate("2019-09-17T16:05:02.839Z"),
+"idFamily" : "17"
+},
+{
+"_id" : ObjectId("5d81044e00eb36356c23c44a"),
+"fullname" : "Sandrox",
+"gender" : "Masculino",
+"birthdate" : ISODate("2019-09-17T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "20020711",
+"createdAt" : ISODate("2019-09-17T16:05:34.121Z"),
+"idFamily" : "22"
+},
+{
+"_id" : ObjectId("5d815be100eb36418cb964e2"),
+"fullname" : "Rominax",
+"gender" : "Femenino",
+"birthdate" : ISODate("2019-09-17T00:00:00Z"),
+"typeID" : "DNI",
+"numberID" : "00000001",
+"createdAt" : ISODate("2019-09-17T22:19:13.098Z"),
+"idFamily" : "23"
+}
+])
