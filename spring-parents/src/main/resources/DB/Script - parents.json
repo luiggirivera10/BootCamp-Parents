@@ -51,8 +51,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20150711",
 "createdAt" : ISODate("2019-09-17T15:56:04.158Z"),
-"idFamily" : "6"
-},
+"idFamily" : "6"},
 {
 "_id" : ObjectId("5d81025500eb36356c23c43e"),
 "fullname" : "Sarai",
@@ -61,8 +60,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20140711",
 "createdAt" : ISODate("2019-09-17T15:57:09.574Z"),
-"idFamily" : "7"
-},
+"idFamily" : "7"},
 {
 "_id" : ObjectId("5d81026800eb36356c23c43f"),
 "fullname" : "Flor",
@@ -71,8 +69,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20130711",
 "createdAt" : ISODate("2019-09-17T15:57:28.746Z"),
-"idFamily" : "8"
-},
+"idFamily" : "8"},
 {
 "_id" : ObjectId("5d81027600eb36356c23c440"),
 "fullname" : "Ana",
@@ -81,8 +78,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20120711",
 "createdAt" : ISODate("2019-09-17T15:57:42.879Z"),
-"idFamily" : "9"
-},
+"idFamily" : "9"},
 {
 "_id" : ObjectId("5d81028c00eb36356c23c441"),
 "fullname" : "Doris",
@@ -91,8 +87,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20110711",
 "createdAt" : ISODate("2019-09-17T15:58:04.059Z"),
-"idFamily" : "10"
-},
+"idFamily" : "10"},
 {
 "_id" : ObjectId("5d81029900eb36356c23c442"),
 "fullname" : "Lucia",
@@ -101,8 +96,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20100711",
 "createdAt" : ISODate("2019-09-17T15:58:17.461Z"),
-"idFamily" : "11"
-},
+"idFamily" : "11"},
 {
 "_id" : ObjectId("5d8102b100eb36356c23c443"),
 "fullname" : "Hernesto",
@@ -111,8 +105,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20090711",
 "createdAt" : ISODate("2019-09-17T15:58:41.444Z"),
-"idFamily" : "12"
-},
+"idFamily" : "12"},
 {
 "_id" : ObjectId("5d8102c100eb36356c23c444"),
 "fullname" : "Hector",
@@ -121,8 +114,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20080711",
 "createdAt" : ISODate("2019-09-17T15:58:57.542Z"),
-"idFamily" : "13"
-},
+"idFamily" : "13"},
 {
 "_id" : ObjectId("5d8102d100eb36356c23c445"),
 "fullname" : "Carlos",
@@ -131,8 +123,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20070711",
 "createdAt" : ISODate("2019-09-17T15:59:13.587Z"),
-"idFamily" : "14"
-},
+"idFamily" : "14"},
 {
 "_id" : ObjectId("5d8102e700eb36356c23c446"),
 "fullname" : "Ronaldo",
@@ -141,8 +132,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20060711",
 "createdAt" : ISODate("2019-09-17T15:59:35.539Z"),
-"idFamily" : "15"
-},
+"idFamily" : "15"},
 {
 "_id" : ObjectId("5d81042200eb36356c23c447"),
 "fullname" : "David",
@@ -151,8 +141,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20050711",
 "createdAt" : ISODate("2019-09-17T16:04:50.904Z"),
-"idFamily" : "16"
-},
+"idFamily" : "16"},
 {
 "_id" : ObjectId("5d81042e00eb36356c23c448"),
 "fullname" : "Daniel",
@@ -161,8 +150,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20040711",
 "createdAt" : ISODate("2019-09-17T16:05:02.839Z"),
-"idFamily" : "17"
-},
+"idFamily" : "17"},
 {
 "_id" : ObjectId("5d81044e00eb36356c23c44a"),
 "fullname" : "Sandrox",
@@ -171,8 +159,7 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "20020711",
 "createdAt" : ISODate("2019-09-17T16:05:34.121Z"),
-"idFamily" : "22"
-},
+"idFamily" : "22"},
 {
 "_id" : ObjectId("5d815be100eb36418cb964e2"),
 "fullname" : "Rominax",
@@ -181,6 +168,5 @@ db.parents.insert([
 "typeID" : "DNI",
 "numberID" : "00000001",
 "createdAt" : ISODate("2019-09-17T22:19:13.098Z"),
-"idFamily" : "23"
-}
+"idFamily" : "23"}
 ])
