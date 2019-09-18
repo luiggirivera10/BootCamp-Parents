@@ -100,12 +100,12 @@ public class ParentRestController {
  public Flux<Parennt> findByName(@PathVariable(value = "fullname") String fullname) {
     return repos.findByFullname(fullname);
   }
-
+/**
   @GetMapping("/students/nombre/{fullname}")
   public Mono<Parennt> obtenerByName(@PathVariable ("fullname") String fullname) {
     return repos.obtenerPorName(fullname);
   }
-
+*/
   /**
 
    * .
