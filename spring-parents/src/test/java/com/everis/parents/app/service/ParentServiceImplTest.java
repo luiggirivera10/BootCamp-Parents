@@ -18,20 +18,34 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
+/**
+ * .
+ * @author lriveras
+ *
+ */
 @RunWith(SpringRunner.class)
 @AutoConfigureWebTestClient
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 public class ParentServiceImplTest {
 
+  /**
+ * Injec ParenRepository.
+ */
   @Mock
   private ParenRepository parentRepository;
-  
+
+  /**
+ * Injec ParenServiceImpl. 
+ */
   @InjectMocks
   private ParentServiceImpl parentService;
-  
+
+  /**
+ * TestService findAll.
+ */
   @Test
-  public void findAll() {
-    Parennt parent = new Parennt();
+  public void findAllTest() {
+    final Parennt parent = new Parennt();
     parent.setFullname("Walter");
     parent.setGender("Masculino");
     parent.setBirthdate(new Date());
@@ -40,14 +54,16 @@ public class ParentServiceImplTest {
     parent.setIdFamily("14141414");
     
     when(parentService.findAll()).thenReturn(Flux.just(parent));
-    Flux<Parennt> actua = parentService.findAll();
+    final Flux<Parennt> actua = parentService.findAll();
     assertResults(actua, parent);
   }
   
-  
+  /**
+ *  TestService findByID. 
+ */
   @Test
   public void findById_exist() {
-    Parennt parent2 = new Parennt();
+    final Parennt parent2 = new Parennt();
     parent2.setId("102");
     parent2.setFullname("Ramon");
     parent2.setGender("Masculino");
@@ -56,13 +72,16 @@ public class ParentServiceImplTest {
     parent2.setNumberID("10210210");
     parent2.setIdFamily("14141414");
     when(parentRepository.findById(parent2.getId())).thenReturn(Mono.just(parent2));
-    Mono<Parennt> actual = parentRepository.findById(parent2.getId());
+    final Mono<Parennt> actual = parentRepository.findById(parent2.getId());
     assertResults(actual, parent2);
   }
-  
+
+  /**
+ * TestService findByID.  
+ */
   @Test
   public void findById_not_exist() {
-    Parennt par = new Parennt();
+    final Parennt par = new Parennt();
     par.setId("101");
     par.setFullname("Tito");
     par.setGender("Masculino");
@@ -71,14 +90,16 @@ public class ParentServiceImplTest {
     par.setNumberID("10110110");
     par.setIdFamily("14141414");
     when(parentRepository.findById(par.getId())).thenReturn(Mono.empty());
-    Mono<Parennt> actual = parentRepository.findById(par.getId());
+    final Mono<Parennt> actual = parentRepository.findById(par.getId());
     assertResults(actual);
   }
   
-  
+  /**
+ * TestService dave.  
+ */
   @Test
   public void save() {
-    Parennt s = new Parennt();
+    final Parennt s = new Parennt();
     s.setId("10");
     s.setFullname("Victor");
     s.setGender("Masculino");
@@ -88,14 +109,16 @@ public class ParentServiceImplTest {
     s.setCreatedAt(new Date());
     s.setIdFamily("14141414");
     when(parentRepository.save(s)).thenReturn(Mono.just(s));
-    Mono<Parennt> actual = parentService.save(s);
+    final Mono<Parennt> actual = parentService.save(s);
     assertResults(actual, s);
   }
   
-  
+  /**
+ * TestService delete.  
+ */
   @Test
   public void delete() {
-    Parennt par = new Parennt();
+    final Parennt par = new Parennt();
     par.setId("10");
     par.setFullname("Victor");
     par.setGender("Masculino");
@@ -106,10 +129,13 @@ public class ParentServiceImplTest {
     par.setIdFamily("14141414");
     when(parentRepository.delete(par)).thenReturn(Mono.empty());
   }
-  
+
+  /**
+ * TestService findByNumberID.
+ */
   @Test
   public void findBynNumberID() {
-    Parennt s = new Parennt();
+    final Parennt s = new Parennt();
     s.setId("1234");
     s.setFullname("Pedro");
     s.setGender("Masculino");
@@ -118,13 +144,16 @@ public class ParentServiceImplTest {
     s.setNumberID("12312312");
     s.setIdFamily("14141414");
     when(parentRepository.findByNumberID("12312312")).thenReturn(Mono.just(s));
-    Mono<Parennt> actual = parentService.findByNumberID("12312312");
+    final Mono<Parennt> actual = parentService.findByNumberID("12312312");
     assertResults(actual,s);
   }
 
+  /**
+ * TestService findByName.
+ */
   @Test
   public void findByName() {
-    Parennt s = new Parennt();
+    final Parennt s = new Parennt();
     s.setId("123");
     s.setFullname("Felix");
     s.setGender("Masculino");
@@ -133,14 +162,17 @@ public class ParentServiceImplTest {
     s.setNumberID("736723727");
     s.setIdFamily("14141414");
     when(parentRepository.findByFullname("Felix")).thenReturn(Flux.just(s));
-    Flux<Parennt> actual = parentService.findByFullname("Felix");
+    final Flux<Parennt> actual = parentService.findByFullname("Felix");
     assertResults(actual,s);
   }
-  
-  private void assertResults(Publisher<Parennt> publisher, Parennt... expectedProducts) {
+
+  /**
+ * assertResults.
+ */
+  private void assertResults(final Publisher<Parennt> publisher, Parennt... expectedParents) {
     StepVerifier
         .create(publisher)
-        .expectNext(expectedProducts)
+        .expectNext(expectedParents)
         .verifyComplete();
   }
   

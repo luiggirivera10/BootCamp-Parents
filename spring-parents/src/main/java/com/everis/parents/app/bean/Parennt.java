@@ -13,41 +13,69 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
+/**
+ * .
+ * @author lriveras.
+ *
+ */
 @Getter
 @Setter
 @NoArgsConstructor
 @Document(collection = "parents")
 public class Parennt {
-
+  /**
+ * ID.
+ */
   @Id
   private String id;
-
+  /**
+ * fullname.
+ */
   @NotEmpty(message = "'fullname' No debe ser vacio!")
  private String fullname;
+  /**
+ * gender.
+ */
   @NotEmpty(message = "'gender' No debe ser vacio!")
  private String gender;
+  /**
+ * birthdate.
+ */
   @NotNull
   @JsonFormat(pattern = "yyyy-MM-dd", shape = Shape.STRING)
  private Date birthdate;
+  /**
+ * typeID.
+ */
   @NotEmpty(message = "'typeID' No debe ser vacio!")
  private String typeID;
+  /**
+ * numberID.
+ */
   @NotEmpty(message = "'numberID' No debe ser vacio!")
   @Size(min = 8, max = 8,message = "'numberID' debe tener 8 caracteres")
  private String numberID;
+  /**
+ * createAt.
+ */
   @NotNull
   @DateTimeFormat(pattern = "yyyy-MM-dd")
  private Date createdAt = new Date();
+  /**
+ * iidFamily.
+ */
   @NotEmpty(message = "'idFamily' No debe ser vacio!")
  private String idFamily;
 
   /**
  * Test.
  */
-  public Parennt(String fullname,
-      String gender, Date birthdate,
-      String typeID,
-      String numberID,
-      String idFamily) {
+  public Parennt(final String fullname,
+      final String gender, 
+      final Date birthdate,
+      final String typeID,
+      final String numberID,
+      final String idFamily) {
     this.fullname = fullname;
     this.gender = gender;
     this.birthdate = birthdate;
