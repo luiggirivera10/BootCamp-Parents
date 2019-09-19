@@ -1,0 +1,95 @@
+con = new Mongo()
+db = conn.getDB("Students")
+db.createCollection("parents")
+
+db.parents.insert([
+{
+        "_id" : ObjectId("5d8101c800eb36356c23c437"),
+        "fullname" : "Carmen",
+        "gender" : "Femenino",
+        "birthdate" : ISODate("2019-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20190711",
+        "createdAt" : ISODate("2019-09-17T15:54:48.526Z"),
+        "idFamily" : "2"
+},
+{
+        "_id" : ObjectId("5d81020600eb36356c23c43a"),
+        "fullname" : "Mariana",
+        "gender" : "Femenino",
+        "birthdate" : ISODate("2016-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20160711",
+        "createdAt" : ISODate("2019-09-17T15:55:50.817Z"),
+        "idFamily" : "5"
+},
+{
+        "_id" : ObjectId("5d81026800eb36356c23c43f"),
+        "fullname" : "Flor",
+        "gender" : "Femenino",
+        "birthdate" : ISODate("2013-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20130711",
+        "createdAt" : ISODate("2019-09-17T15:57:28.746Z"),
+        "idFamily" : "8"
+},
+{
+        "_id" : ObjectId("5d81029900eb36356c23c442"),
+        "fullname" : "Lucia",
+        "gender" : "Femenino",
+        "birthdate" : ISODate("2010-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20100711",
+        "createdAt" : ISODate("2019-09-17T15:58:17.461Z"),
+        "idFamily" : "11"
+},
+{
+        "_id" : ObjectId("5d8102d100eb36356c23c445"),
+        "fullname" : "Carlos",
+        "gender" : "Masculino",
+        "birthdate" : ISODate("2007-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20070711",
+        "createdAt" : ISODate("2019-09-17T15:59:13.587Z"),
+        "idFamily" : "14"
+},
+{
+        "_id" : ObjectId("5d81042200eb36356c23c447"),
+        "fullname" : "David",
+        "gender" : "Masculino",
+        "birthdate" : ISODate("2005-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20050711",
+        "createdAt" : ISODate("2019-09-17T16:04:50.904Z"),
+        "idFamily" : "16"
+},
+{
+        "_id" : ObjectId("5d81042e00eb36356c23c448"),
+        "fullname" : "Daniel",
+        "gender" : "Masculino",
+        "birthdate" : ISODate("2004-07-11T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20040711",
+        "createdAt" : ISODate("2019-09-17T16:05:02.839Z"),
+        "idFamily" : "17"
+},
+{
+        "_id" : ObjectId("5d81044e00eb36356c23c44a"),
+        "fullname" : "Sandro",
+        "gender" : "Masculino",
+        "birthdate" : ISODate("2019-09-18T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "20020711",
+        "createdAt" : ISODate("2019-09-17T16:05:34.121Z"),
+        "idFamily" : "22"
+},
+{
+        "_id" : ObjectId("5d82a70ff6cac432502990ec"),
+        "fullname" : "Romina",
+        "gender" : "Femenino",
+        "birthdate" : ISODate("2019-09-18T00:00:00Z"),
+        "typeID" : "DNI",
+        "numberID" : "00000000",
+        "createdAt" : ISODate("2019-09-18T21:52:15.937Z"),
+        "idFamily" : "23"
+}])

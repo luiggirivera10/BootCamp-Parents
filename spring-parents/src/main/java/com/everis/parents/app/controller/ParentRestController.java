@@ -22,12 +22,22 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+/**
+ * .
+ * @author lriveras.
+ *
+ */
 @RestController
 @RequestMapping("/api/v1.0")
 public class ParentRestController {
-
+  /**
+ * Injec ParentService.
+ */
   @Autowired
  private ParentService repos;
+  /**
+ * .
+ */
   private static final Logger log = LoggerFactory.getLogger(ParentRestController.class);
   
   /**
@@ -35,7 +45,7 @@ public class ParentRestController {
    * */
   @GetMapping("/parents")
  public Flux<Parennt> findAll() {
-    Flux<Parennt> parennts = repos.findAll().map(parent -> {
+    final Flux<Parennt> parennts = repos.findAll().map(parent -> {
       parent.setFullname(parent.getFullname().toUpperCase());
       return parent;
     }).doOnNext(stu -> log.info(stu.getFullname()));
@@ -47,8 +57,8 @@ public class ParentRestController {
    * */ 
   @GetMapping("/parents/{id}")
  public Mono<Parennt> findById(@PathVariable String id) {
-    Flux<Parennt> parennts = repos.findAll();
-    Mono<Parennt> parennt = parennts.filter(s -> s.getId().equals(id)).next()
+    final Flux<Parennt> parennts = repos.findAll();
+    final Mono<Parennt> parennt = parennts.filter(s -> s.getId().equals(id)).next()
         .doOnNext(stu -> log.info(stu.getFullname()));
     return parennt;
   }
@@ -57,7 +67,7 @@ public class ParentRestController {
    * .
    * */
   @PostMapping("/parents")
- public Mono<Parennt> newParent(@Valid @RequestBody Parennt parennt) {
+ public Mono<Parennt> newParent(@Valid @RequestBody final Parennt parennt) {
     return repos.save(parennt);
   }
 
@@ -65,8 +75,8 @@ public class ParentRestController {
    * .
    * */
   @PutMapping("/parents/{id}")
- public Mono<ResponseEntity<Parennt>> updateParent(@PathVariable(value = "id") String id,
-      @Valid @RequestBody Parennt parennt) {
+ public Mono<ResponseEntity<Parennt>> updateParent(@PathVariable(value = "id") final String id,
+      @Valid @RequestBody final Parennt parennt) {
     return repos.findById(id).flatMap(existingParent -> {
       existingParent.setFullname(parennt.getFullname());
       existingParent.setGender(parennt.getGender());
@@ -83,7 +93,7 @@ public class ParentRestController {
    * .
    * */
   @DeleteMapping("/parents/{id}")
- public Mono<ResponseEntity<Void>> deleteParent(@PathVariable(value = "id") String id) {
+ public Mono<ResponseEntity<Void>> deleteParent(@PathVariable(value = "id") final String id) {
 
     return repos.findById(id)
     .flatMap(existingParent -> repos.delete(existingParent)
@@ -91,21 +101,29 @@ public class ParentRestController {
     .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
   }
 
+  /**
+ * Servicio findByNumberID.
+ */
   @GetMapping("/parents/doc/{numberID}")
- public Mono<Parennt> findByNumberID(@PathVariable("numberID") String numberID) {
+ public Mono<Parennt> findByNumberID(@PathVariable("numberID") final String numberID) {
     return repos.findByNumberID(numberID);
   }
 
+  /**
+  * Servicio findByName.
+ */
   @GetMapping("/parents/fname/{fullname}")
- public Flux<Parennt> findByName(@PathVariable(value = "fullname") String fullname) {
+ public Flux<Parennt> findByName(@PathVariable(value = "fullname") final String fullname) {
     return repos.findByFullname(fullname);
   }
-/**
-  @GetMapping("/students/nombre/{fullname}")
-  public Mono<Parennt> obtenerByName(@PathVariable ("fullname") String fullname) {
-    return repos.obtenerPorName(fullname);
+
+  /**
+   * .
+   */
+  @GetMapping("/parents/nombre/{fullname}")
+  public Mono<Parennt> findByFullnamex(@PathVariable ("fullname") final String fullname) {
+    return repos.findByFullname_par(fullname);
   }
-*/
   /**
 
    * .
@@ -113,8 +131,8 @@ public class ParentRestController {
    */
   @GetMapping("/parents/date/{birthdate}/{birthdate1}")
   public Flux<Parennt> findByBirthdateBetween(@PathVariable("birthdate")
-      @DateTimeFormat(iso = ISO.DATE) Date birthdate,@PathVariable("birthdate1")
-      @DateTimeFormat(iso = ISO.DATE) Date birthdate1) {
+      @DateTimeFormat(iso = ISO.DATE)final Date birthdate,@PathVariable("birthdate1")
+      @DateTimeFormat(iso = ISO.DATE)final Date birthdate1) {
     return repos.findByBirthdateBetween(birthdate, birthdate1);
   }
 }

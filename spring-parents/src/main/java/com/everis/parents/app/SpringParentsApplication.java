@@ -1,16 +1,22 @@
 package com.everis.parents.app;
 
+import com.everis.parents.app.config.SwaggerConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import springfox.documentation.swagger2.annotations.EnableSwagger2WebFlux;
+import org.springframework.context.annotation.Import;
+import org.springframework.web.reactive.config.ResourceHandlerRegistry;
 
 @SpringBootApplication
-@EnableSwagger2WebFlux
+@Import(SwaggerConfiguration.class)
 public class SpringParentsApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(SpringParentsApplication.class, args);
+  }
+  
+  public void addResourceHandlers(ResourceHandlerRegistry regisry) {
+    regisry.addResourceHandler("swagger-ui.html")
+      .addResourceLocations("classpath:/META-INF/resources/");
   }
 
 }

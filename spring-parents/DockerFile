@@ -1,0 +1,5 @@
+FROM openjdk:8-jdk
+VOLUME /tmp
+ADD /target/parent.jar parent.jar
+RUN sh -c 'touch /parent.jar'
+ENTRYPOINT ["java", "-Dspring.data.mongodb.uri=mongodb://spring-parent-mongo/parents","-Djava.security.egd=file:/dev/./urandom","-jar","/parent.jar"]
