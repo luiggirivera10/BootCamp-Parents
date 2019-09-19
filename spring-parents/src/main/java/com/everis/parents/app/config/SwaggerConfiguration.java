@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebFlux;
 @EnableSwagger2WebFlux
 public class SwaggerConfiguration {
   /**
- * .
+ * parentApi.
  */
   @Bean
   public Docket parentApi() {
