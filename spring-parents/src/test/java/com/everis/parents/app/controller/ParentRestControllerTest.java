@@ -86,7 +86,7 @@ public void findById() {
     final Parennt parennt = new Parennt("Rominax", "Femenino", new Date(), "DNI", "00000001", "23");
     client.post().uri("/api/v1.0/parents").contentType(MediaType.APPLICATION_JSON_UTF8)
         .accept(MediaType.APPLICATION_JSON_UTF8).body(Mono.just(parennt), Parennt.class).exchange()
-        .expectStatus().isOk().expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8)
+        .expectStatus().isCreated().expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8)
         .expectBody(Parennt.class).consumeWith(response -> {
           final Parennt paren = response.getResponseBody();
           Assertions.assertThat(paren.getId()).isNotEmpty();
@@ -99,8 +99,8 @@ public void findById() {
  */
   @Test
   public void updateTest() {
-    final Parennt parent = service.findByFullname_par("Sandrox").block();
-    final Parennt parentEditado = new Parennt("Sandro", "Masculino",
+    final Parennt parent = service.findByFullname_par("Sandro").block();
+    final Parennt parentEditado = new Parennt("Sandrox", "Masculino",
         new Date(),"DNI", "20020711","22");
     if (parent != null) {
       client.put().uri("/api/v1.0/parents/{id}",Collections.singletonMap("id", parent.getId()))
@@ -108,11 +108,11 @@ public void findById() {
         .accept(MediaType.APPLICATION_JSON_UTF8)
      .body(Mono.just(parentEditado), Parennt.class)
      .exchange()
-     .expectStatus().isOk()
+     .expectStatus().isCreated()
      .expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8)
      .expectBody()
      .jsonPath("$.id").isNotEmpty()
-     .jsonPath("$.fullname").isEqualTo("Sandro")
+     .jsonPath("$.fullname").isEqualTo("Sandrox")
      .jsonPath("$.numberID").isEqualTo("20020711");
     }
   }
@@ -128,7 +128,7 @@ public void findById() {
         .uri("/api/v1.0/parents/nombre/{fullname}",
             Collections.singletonMap("fullname", parent.getFullname()))
         .exchange()
-        .expectStatus().isOk()
+        .expectStatus().isFound()
         .expectBody().jsonPath("$.fullname").isEqualTo("David");
     }
   }
@@ -144,7 +144,7 @@ public void findById() {
         .uri("/api/v1.0/parents/doc/{numberID}",
         Collections.singletonMap("numberID", parent.getNumberID()))
         .exchange()
-        .expectStatus().isOk()
+        .expectStatus().isFound()
         .expectBody().jsonPath("$.numberID").isEqualTo("20100711"); 
     }
   }
@@ -154,7 +154,7 @@ public void findById() {
  */
   @Test
   public void deleteTest() {
-    Parennt parent = service.findByNumberID("00000000").block();
+    Parennt parent = service.findByNumberID("0000000").block();
     if (parent != null) {
       client.delete()
       .uri("/api/v1.0/parents/{id}",Collections.singletonMap("id", parent.getId()))
