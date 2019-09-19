@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "014c19d3-649e-4bcc-844b-d5f3eed10ab5",
+		"name": "Reactive SpringBoot & MongoDB - Parent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1.0/parents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents"
+					]
+				},
+				"description": "GET"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents/5d8101c800eb36356c23c437",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents",
+						"5d8101c800eb36356c23c437"
+					]
+				},
+				"description": "GET with name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents/doc/numberID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents/doc/20190711",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents",
+						"doc",
+						"20190711"
+					]
+				},
+				"description": "GET with name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents/fname/fullname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents/fname/Carmen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents",
+						"fname",
+						"Carmen"
+					]
+				},
+				"description": "GET with name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents/date/2019-05-10/2019-09-10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents/date/2010-01-08/2015-08-08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents",
+						"date",
+						"2010-01-08",
+						"2015-08-08"
+					]
+				},
+				"description": "GET with birthdate"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"fullname\": \"a\",\r\n        \"gender\": \"Masculino\",\r\n        \"birthdate\": \"2019-09-09\",\r\n        \"typeID\": \"DNI\",\r\n        \"numberID\": \"00000006\",\r\n        \"idFamily\": \"26\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents"
+					]
+				},
+				"description": "POST create Student"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"fullname\": \"Alfonsoxxxxxx\",\r\n        \"gender\": \"Masculino\",\r\n        \"birthdate\": \"2019-09-09\",\r\n        \"typeID\": \"DNI\",\r\n        \"numberID\": \"20190909\",\r\n        \"idFamily\": \"26\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents/5d82cff4f6cac41f70856eaf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents",
+						"5d82cff4f6cac41f70856eaf"
+					]
+				},
+				"description": "POST create Student"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1.0/parents/5d7959ad00eb3640a49f0985",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/parents/5d82cff4f6cac41f70856eaf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"parents",
+						"5d82cff4f6cac41f70856eaf"
+					]
+				},
+				"description": "Delete Student"
+			},
+			"response": []
+		}
+	]
+}
