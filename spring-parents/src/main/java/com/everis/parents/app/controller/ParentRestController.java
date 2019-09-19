@@ -67,10 +67,11 @@ public class ParentRestController {
    * .
    * */
   @PostMapping("/parents")
- public Mono<Parennt> newParent(@Valid @RequestBody final Parennt parennt) {
-    return repos.save(parennt);
+ public Mono<ResponseEntity<Parennt>> newParent(@Valid @RequestBody final Parennt parennt) {
+    return repos.save(parennt)
+        .map(newParent -> new ResponseEntity<>(newParent, HttpStatus.CREATED))
+    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.CONFLICT));
   }
-
   /**
    * .
    * */
@@ -85,7 +86,7 @@ public class ParentRestController {
       existingParent.setNumberID(parennt.getNumberID());
       existingParent.setIdFamily(parennt.getIdFamily());
       return repos.save(existingParent);
-    }).map(updatedParent -> new ResponseEntity<>(updatedParent, HttpStatus.OK))
+    }).map(updatedParent -> new ResponseEntity<>(updatedParent, HttpStatus.CREATED))
     .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
   }
 
@@ -105,15 +106,19 @@ public class ParentRestController {
  * Servicio findByNumberID.
  */
   @GetMapping("/parents/doc/{numberID}")
- public Mono<Parennt> findByNumberID(@PathVariable("numberID") final String numberID) {
-    return repos.findByNumberID(numberID);
+ public Mono<ResponseEntity<Parennt>> 
+      findByNumberID(@PathVariable("numberID") final String numberID) {
+    return repos.findByNumberID(numberID)
+        .map(newParent -> new ResponseEntity<>(newParent, HttpStatus.FOUND))
+        .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
   }
 
   /**
   * Servicio findByName.
  */
   @GetMapping("/parents/fname/{fullname}")
- public Flux<Parennt> findByName(@PathVariable(value = "fullname") final String fullname) {
+  public Flux<Parennt>
+      findByName(@PathVariable(value = "fullname") final String fullname) {
     return repos.findByFullname(fullname);
   }
 
@@ -121,8 +126,10 @@ public class ParentRestController {
    * .
    */
   @GetMapping("/parents/nombre/{fullname}")
-  public Mono<Parennt> findByFullnamex(@PathVariable ("fullname") final String fullname) {
-    return repos.findByFullname_par(fullname);
+  public Mono<ResponseEntity<Parennt>> findByFullnamex(@PathVariable ("fullname") final String fullname) {
+    return repos.findByFullname_par(fullname)
+        .map(newParent -> new ResponseEntity<>(newParent, HttpStatus.FOUND))
+        .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
   }
   /**
 
