@@ -99,8 +99,8 @@ public void findById() {
  */
   @Test
   public void updateTest() {
-    final Parennt parent = service.findByFullname_par("Sandro").block();
-    final Parennt parentEditado = new Parennt("Sandrox", "Masculino",
+    final Parennt parent = service.findByFullname_par("Sandrox").block();
+    final Parennt parentEditado = new Parennt("Sandro", "Masculino",
         new Date(),"DNI", "20020711","22");
     if (parent != null) {
       client.put().uri("/api/v1.0/parents/{id}",Collections.singletonMap("id", parent.getId()))
@@ -112,7 +112,7 @@ public void findById() {
      .expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8)
      .expectBody()
      .jsonPath("$.id").isNotEmpty()
-     .jsonPath("$.fullname").isEqualTo("Sandrox")
+     .jsonPath("$.fullname").isEqualTo("Sandro")
      .jsonPath("$.numberID").isEqualTo("20020711");
     }
   }
@@ -154,7 +154,7 @@ public void findById() {
  */
   @Test
   public void deleteTest() {
-    Parennt parent = service.findByNumberID("0000000").block();
+    Parennt parent = service.findByNumberID("00000000").block();
     if (parent != null) {
       client.delete()
       .uri("/api/v1.0/parents/{id}",Collections.singletonMap("id", parent.getId()))
