@@ -39,7 +39,7 @@ public class ParentRestController {
  * .
  */
   private static final Logger log = LoggerFactory.getLogger(ParentRestController.class);
-  
+
   /**
    * .
    * */
@@ -48,7 +48,10 @@ public class ParentRestController {
     final Flux<Parennt> parennts = repos.findAll().map(parent -> {
       parent.setFullname(parent.getFullname().toUpperCase());
       return parent;
-    }).doOnNext(stu -> log.info(stu.getFullname()));
+    })
+        .doOnNext(stu -> log.info(stu.getFullname()))
+        .doOnComplete(() -> log.debug("Done!"))
+        .doOnError(e -> log.error("failure",e));
     return parennts;
   }
   
@@ -59,7 +62,9 @@ public class ParentRestController {
  public Mono<Parennt> findById(@PathVariable String id) {
     final Flux<Parennt> parennts = repos.findAll();
     final Mono<Parennt> parennt = parennts.filter(s -> s.getId().equals(id)).next()
-        .doOnNext(stu -> log.info(stu.getFullname()));
+        .doOnNext(p -> log.info("Found parent {} - ${}",p.getFullname(),p.getId()))
+        .doOnNext(stu -> log.info(stu.getFullname()))
+        .doOnError(e -> log.error("failure findById",e));
     return parennt;
   }
 
@@ -70,8 +75,11 @@ public class ParentRestController {
  public Mono<ResponseEntity<Parennt>> newParent(@Valid @RequestBody final Parennt parennt) {
     return repos.save(parennt)
         .map(newParent -> new ResponseEntity<>(newParent, HttpStatus.CREATED))
-    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.CONFLICT));
+    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.CONFLICT))
+    .doOnNext(p -> log.info("Saved!"))
+    .doOnError(e -> log.error("Error - Save!",e));
   }
+
   /**
    * .
    * */
@@ -87,7 +95,9 @@ public class ParentRestController {
       existingParent.setIdFamily(parennt.getIdFamily());
       return repos.save(existingParent);
     }).map(updatedParent -> new ResponseEntity<>(updatedParent, HttpStatus.CREATED))
-    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND))
+    .doOnNext(p -> log.info("Modified!"))
+    .doOnError(e -> log.error("Error - Update!",e));
   }
 
   /**
@@ -99,7 +109,9 @@ public class ParentRestController {
     return repos.findById(id)
     .flatMap(existingParent -> repos.delete(existingParent)
       .then(Mono.just(new ResponseEntity<Void>(HttpStatus.OK))))
-    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND))
+    .doOnNext(p -> log.info("Deleted!"))
+    .doOnError(e -> log.error("Error - Delete!",e));
   }
 
   /**
@@ -109,6 +121,9 @@ public class ParentRestController {
  public Mono<ResponseEntity<Parennt>> 
       findByNumberID(@PathVariable("numberID") final String numberID) {
     return repos.findByNumberID(numberID)
+        .doOnNext(p -> log.info("Found parent by numberID {} - ${}",
+            p.getFullname(),p.getNumberID()))
+        .doOnError(e -> log.error("Failure findByNumberID",e))
         .map(newParent -> new ResponseEntity<>(newParent, HttpStatus.FOUND))
         .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
   }
@@ -119,14 +134,18 @@ public class ParentRestController {
   @GetMapping("/parents/fname/{fullname}")
   public Flux<Parennt>
       findByName(@PathVariable(value = "fullname") final String fullname) {
-    return repos.findByFullname(fullname);
+    return repos.findByFullname(fullname)
+        .doOnNext(p -> log.info("Found parent by name {} - ${}",p.getFullname(),p.getNumberID()))
+        .doOnComplete(() -> log.info("Done!"))
+        .doOnError(e -> log.error("Failure findByName",e));
   }
 
   /**
    * .
    */
   @GetMapping("/parents/nombre/{fullname}")
-  public Mono<ResponseEntity<Parennt>> findByFullnamex(@PathVariable ("fullname") final String fullname) {
+  public Mono<ResponseEntity<Parennt>> 
+       findByFullnamex(@PathVariable ("fullname") final String fullname) {
     return repos.findByFullname_par(fullname)
         .map(newParent -> new ResponseEntity<>(newParent, HttpStatus.FOUND))
         .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
@@ -140,6 +159,10 @@ public class ParentRestController {
   public Flux<Parennt> findByBirthdateBetween(@PathVariable("birthdate")
       @DateTimeFormat(iso = ISO.DATE)final Date birthdate,@PathVariable("birthdate1")
       @DateTimeFormat(iso = ISO.DATE)final Date birthdate1) {
-    return repos.findByBirthdateBetween(birthdate, birthdate1);
+    return repos.findByBirthdateBetween(birthdate, birthdate1)
+        .doOnNext(p -> log.info("Found parent betweenbirthdate {} - ${}",
+            p.getFullname(),p.getNumberID()))
+        .doOnComplete(() -> log.info("Done!"))
+        .doOnError(e -> log.error("Failure findBByBirthdate",e));
   }
 }
