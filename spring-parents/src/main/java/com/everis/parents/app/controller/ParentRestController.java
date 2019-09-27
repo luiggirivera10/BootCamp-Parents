@@ -35,6 +35,7 @@ public class ParentRestController {
  */
   @Autowired
  private ParentService repos;
+
   /**
  * .
  */
@@ -164,5 +165,18 @@ public class ParentRestController {
             p.getFullname(),p.getNumberID()))
         .doOnComplete(() -> log.info("Done!"))
         .doOnError(e -> log.error("Failure findBByBirthdate",e));
+  }
+
+  /**
+   * .Demo.
+   */
+  @GetMapping("/parents/family/{idFamily}")
+ public Mono<Parennt> findByIdFamily(@PathVariable String idFamily) {
+    final Flux<Parennt> parennts = repos.findByIdFamily(idFamily);
+    final Mono<Parennt> parennt = parennts.filter(s -> s.getIdFamily().equals(idFamily)).next()
+        .doOnNext(p -> log.info("Found parent {} - ${}",p.getFullname(),p.getId()))
+        .doOnNext(stu -> log.info(stu.getFullname()))
+        .doOnError(e -> log.error("failure findByIdFamily",e));
+    return parennt;
   }
 }

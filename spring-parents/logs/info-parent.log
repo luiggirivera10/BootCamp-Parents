@@ -1,0 +1,209 @@
+27-09-2019 10:35:12.418 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+27-09-2019 10:35:13.892 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 10:35:13.961 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 64ms. Found 1 repository interfaces.
+27-09-2019 10:35:13.968 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 10:35:13.976 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+27-09-2019 10:35:14.145 [restartedMain] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+27-09-2019 10:35:14.475 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=6acbd9f3-1bb3-316e-b810-6899ae7d7a28
+27-09-2019 10:35:14.724 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5aa3c7f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 10:35:14.730 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$3d1fef79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 10:35:15.727 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 10:35:16.340 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 10:35:16.341 [restartedMain] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:27017 to client view of cluster
+27-09-2019 10:35:16.377 [cluster-ClusterId{value='5d8e2c34b6195b3564acf5c6', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:2315}] to localhost:27017
+27-09-2019 10:35:16.381 [cluster-ClusterId{value='5d8e2c34b6195b3564acf5c6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3020311}
+27-09-2019 10:35:16.383 [cluster-ClusterId{value='5d8e2c34b6195b3564acf5c6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+27-09-2019 10:35:16.665 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer - Unable to start LiveReload server
+27-09-2019 10:35:16.722 [cluster-ClusterId{value='5d8e2c33b6195b3564acf5c5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2316}] to localhost:27017
+27-09-2019 10:35:16.725 [cluster-ClusterId{value='5d8e2c33b6195b3564acf5c5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2157130}
+27-09-2019 10:35:18.219 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 10:35:18.220 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 10:35:18.230 [restartedMain] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@f85b2e9
+27-09-2019 10:35:18.378 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+27-09-2019 10:35:18.560 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 10:35:18.561 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 10:35:20.437 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+27-09-2019 10:35:20.479 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+27-09-2019 10:35:20.552 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+27-09-2019 10:35:20.579 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+27-09-2019 10:35:20.732 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+27-09-2019 10:35:20.733 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+27-09-2019 10:35:20.959 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+27-09-2019 10:35:21.354 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+27-09-2019 10:35:21.355 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+27-09-2019 10:35:21.356 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+27-09-2019 10:35:21.356 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+27-09-2019 10:35:21.357 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+27-09-2019 10:35:21.357 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+27-09-2019 10:35:21.358 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+27-09-2019 10:35:21.471 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+27-09-2019 10:35:21.474 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+27-09-2019 10:35:21.477 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+27-09-2019 10:35:21.481 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1569598521480 with initial instances count: 0
+27-09-2019 10:35:21.486 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-PARENTS with eureka with status UP
+27-09-2019 10:35:21.487 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569598521487, current=UP, previous=STARTING]
+27-09-2019 10:35:21.489 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+27-09-2019 10:35:21.490 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+27-09-2019 10:35:21.498 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+27-09-2019 10:35:21.540 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+27-09-2019 10:35:21.562 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+27-09-2019 10:35:22.258 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer.start - Netty started on port(s): 8085
+27-09-2019 10:35:22.260 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 8085
+27-09-2019 10:35:22.745 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStarted - Started SpringParentsApplication in 13.92 seconds (JVM running for 15.329)
+27-09-2019 10:35:51.479 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+27-09-2019 10:35:51.483 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+27-09-2019 10:35:51.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+27-09-2019 10:35:51.487 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+27-09-2019 10:35:51.488 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+27-09-2019 10:35:51.489 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: false
+27-09-2019 10:35:51.490 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+27-09-2019 10:35:51.545 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+27-09-2019 10:39:15.100 [nioEventLoopGroup-2-2] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:2322}] to localhost:27017
+27-09-2019 10:39:15.206 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+27-09-2019 10:39:15.208 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+27-09-2019 10:39:15.208 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+27-09-2019 10:39:15.210 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+27-09-2019 10:39:15.211 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+27-09-2019 10:39:15.212 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+27-09-2019 10:39:15.213 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+27-09-2019 10:39:15.214 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+27-09-2019 10:39:15.215 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+27-09-2019 10:39:15.216 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+27-09-2019 10:39:15.217 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+27-09-2019 10:39:15.218 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+27-09-2019 10:39:15.219 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+27-09-2019 10:39:15.220 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+27-09-2019 10:39:15.221 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+27-09-2019 10:39:15.222 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+27-09-2019 10:39:15.223 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+27-09-2019 10:39:15.224 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+27-09-2019 10:39:15.225 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+27-09-2019 10:39:15.226 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+27-09-2019 10:40:21.377 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+27-09-2019 10:40:37.650 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+27-09-2019 10:40:37.651 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+27-09-2019 10:40:37.652 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+27-09-2019 10:40:37.652 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+27-09-2019 10:40:37.653 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+27-09-2019 10:40:37.654 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+27-09-2019 10:40:37.656 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+27-09-2019 10:40:37.657 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+27-09-2019 10:40:37.659 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+27-09-2019 10:40:37.660 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+27-09-2019 10:40:37.660 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+27-09-2019 10:40:37.661 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+27-09-2019 10:40:37.662 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+27-09-2019 10:40:37.662 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+27-09-2019 10:40:37.663 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+27-09-2019 10:40:37.664 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+27-09-2019 10:40:37.664 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+27-09-2019 10:40:37.665 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+27-09-2019 10:40:37.666 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+27-09-2019 10:40:37.666 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+27-09-2019 10:41:21.007 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+27-09-2019 10:41:21.008 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+27-09-2019 10:41:21.009 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+27-09-2019 10:41:21.010 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+27-09-2019 10:41:21.010 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+27-09-2019 10:41:21.011 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+27-09-2019 10:41:21.011 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+27-09-2019 10:41:21.012 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+27-09-2019 10:41:21.012 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+27-09-2019 10:41:21.013 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+27-09-2019 10:41:21.014 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+27-09-2019 10:41:21.014 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+27-09-2019 10:41:21.015 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+27-09-2019 10:41:21.015 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+27-09-2019 10:41:21.016 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+27-09-2019 10:41:21.016 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+27-09-2019 10:41:21.017 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+27-09-2019 10:41:21.018 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+27-09-2019 10:41:21.020 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+27-09-2019 10:41:21.021 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+27-09-2019 10:45:21.392 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+27-09-2019 10:46:32.846 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+27-09-2019 10:46:32.847 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+27-09-2019 10:46:32.847 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+27-09-2019 10:46:32.848 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+27-09-2019 10:46:32.849 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+27-09-2019 10:46:32.850 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+27-09-2019 10:46:32.850 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+27-09-2019 10:46:32.852 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+27-09-2019 10:46:32.853 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+27-09-2019 10:46:32.854 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+27-09-2019 10:46:32.855 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+27-09-2019 10:46:32.856 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+27-09-2019 10:46:32.856 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+27-09-2019 10:46:32.857 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+27-09-2019 10:46:32.857 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+27-09-2019 10:46:32.858 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+27-09-2019 10:46:32.858 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+27-09-2019 10:46:32.859 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+27-09-2019 10:46:32.859 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+27-09-2019 10:46:32.860 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+27-09-2019 10:50:21.407 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+27-09-2019 10:51:49.099 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+27-09-2019 10:51:49.122 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+27-09-2019 10:51:49.123 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+27-09-2019 10:51:49.123 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+27-09-2019 10:51:49.132 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+27-09-2019 10:51:49.133 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+27-09-2019 10:51:49.135 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+27-09-2019 10:51:49.136 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+27-09-2019 10:51:49.136 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+27-09-2019 10:51:49.137 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+27-09-2019 10:51:49.146 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+27-09-2019 10:51:49.147 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+27-09-2019 10:51:49.148 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+27-09-2019 10:51:49.148 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+27-09-2019 10:51:49.149 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+27-09-2019 10:51:49.149 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+27-09-2019 10:51:49.150 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+27-09-2019 10:51:49.151 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+27-09-2019 10:51:49.151 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+27-09-2019 10:51:49.152 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+27-09-2019 10:51:53.884 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$5 - Found parent Carmen - $5d8101c800eb36356c23c437
+27-09-2019 10:51:53.886 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$6 - Carmen
+27-09-2019 10:51:59.405 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$18 - Found parent by numberID Carmen - $20190711
+27-09-2019 10:52:02.417 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$21 - Found parent by name Carmen - $20190711
+27-09-2019 10:52:02.418 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$22 - Done!
+27-09-2019 10:52:15.006 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Rocio - $20150711
+27-09-2019 10:52:15.007 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Sarai - $20140711
+27-09-2019 10:52:15.007 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Flor - $20130711
+27-09-2019 10:52:15.008 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Ana - $20120711
+27-09-2019 10:52:15.009 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Doris - $20110711
+27-09-2019 10:52:15.009 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Lucia - $20100711
+27-09-2019 10:52:15.010 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Hernesto - $20090711
+27-09-2019 10:52:15.010 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Hector - $20080711
+27-09-2019 10:52:15.011 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$26 - Done!
+27-09-2019 10:55:21.472 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+27-09-2019 10:56:36.572 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+27-09-2019 10:56:36.574 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+27-09-2019 10:56:36.575 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+27-09-2019 10:56:36.576 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+27-09-2019 10:56:36.577 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+27-09-2019 10:56:36.577 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+27-09-2019 10:56:36.578 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+27-09-2019 10:56:36.579 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+27-09-2019 10:56:36.579 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+27-09-2019 10:56:36.579 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+27-09-2019 10:56:36.580 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+27-09-2019 10:56:36.580 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+27-09-2019 10:56:36.581 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+27-09-2019 10:56:36.581 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+27-09-2019 10:56:36.582 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+27-09-2019 10:56:36.582 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+27-09-2019 10:56:36.669 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+27-09-2019 10:56:36.671 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+27-09-2019 10:56:36.671 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+27-09-2019 10:56:36.672 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+27-09-2019 10:57:25.427 [RMI TCP Connection(32)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+27-09-2019 10:57:25.561 [RMI TCP Connection(32)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS with eureka with status DOWN
+27-09-2019 10:57:25.577 [RMI TCP Connection(32)-127.0.0.1] WARN  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569599845570, current=DOWN, previous=UP]
+27-09-2019 10:57:25.605 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+27-09-2019 10:57:25.682 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+27-09-2019 10:57:25.894 [RMI TCP Connection(32)-127.0.0.1] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:2322}] to localhost:27017 because the pool has been closed.
+27-09-2019 10:57:28.411 [RMI TCP Connection(32)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+27-09-2019 10:57:31.418 [RMI TCP Connection(32)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+27-09-2019 10:57:31.497 [RMI TCP Connection(32)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - deregister  status: 200
+27-09-2019 10:57:31.583 [RMI TCP Connection(32)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient

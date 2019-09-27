@@ -34,4 +34,9 @@ public interface ParenRepository extends ReactiveMongoRepository<Parennt, String
  */
   @Query("{ 'fullname': ?0 }")
   Mono<Parennt> findByFullname_par(String fullname);
+
+  /**
+   * Demo.
+   */
+  Flux<Parennt> findByIdFamily(String idFamily);
 }

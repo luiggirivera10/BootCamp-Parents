@@ -1,0 +1,304 @@
+26-09-2019 19:39:22.033 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+26-09-2019 19:39:23.840 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+26-09-2019 19:39:23.935 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 88ms. Found 1 repository interfaces.
+26-09-2019 19:39:23.942 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+26-09-2019 19:39:23.948 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+26-09-2019 19:39:24.102 [restartedMain] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+26-09-2019 19:39:24.559 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=6acbd9f3-1bb3-316e-b810-6899ae7d7a28
+26-09-2019 19:39:24.915 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$972a65f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-09-2019 19:39:24.923 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$79a68d76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-09-2019 19:39:26.267 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+26-09-2019 19:39:27.804 [cluster-ClusterId{value='5d8d5a3eb6195b2f54a8557c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2283}] to localhost:27017
+26-09-2019 19:39:27.813 [cluster-ClusterId{value='5d8d5a3eb6195b2f54a8557c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5086365}
+26-09-2019 19:39:28.629 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+26-09-2019 19:39:28.630 [restartedMain] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:27017 to client view of cluster
+26-09-2019 19:39:28.674 [cluster-ClusterId{value='5d8d5a40b6195b2f54a8557d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:2284}] to localhost:27017
+26-09-2019 19:39:28.676 [cluster-ClusterId{value='5d8d5a40b6195b2f54a8557d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1115078}
+26-09-2019 19:39:28.677 [cluster-ClusterId{value='5d8d5a40b6195b2f54a8557d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+26-09-2019 19:39:29.039 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer - Unable to start LiveReload server
+26-09-2019 19:39:31.523 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+26-09-2019 19:39:31.524 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26-09-2019 19:39:31.603 [restartedMain] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2bc8ffd6
+26-09-2019 19:39:31.897 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+26-09-2019 19:39:32.536 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+26-09-2019 19:39:32.536 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26-09-2019 19:39:35.812 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+26-09-2019 19:39:35.924 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+26-09-2019 19:39:36.052 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+26-09-2019 19:39:36.053 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+26-09-2019 19:39:36.370 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+26-09-2019 19:39:36.370 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+26-09-2019 19:39:36.699 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+26-09-2019 19:39:37.247 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+26-09-2019 19:39:37.248 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+26-09-2019 19:39:37.248 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+26-09-2019 19:39:37.249 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+26-09-2019 19:39:37.249 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+26-09-2019 19:39:37.250 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+26-09-2019 19:39:37.250 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+26-09-2019 19:39:38.238 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+26-09-2019 19:39:38.242 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+26-09-2019 19:39:38.246 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+26-09-2019 19:39:38.271 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1569544778251 with initial instances count: 0
+26-09-2019 19:39:38.276 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-PARENTS with eureka with status UP
+26-09-2019 19:39:38.277 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569544778277, current=UP, previous=STARTING]
+26-09-2019 19:39:38.280 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+26-09-2019 19:39:38.280 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+26-09-2019 19:39:38.307 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+26-09-2019 19:39:38.380 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+26-09-2019 19:39:38.787 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+26-09-2019 19:39:39.263 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer.start - Netty started on port(s): 8085
+26-09-2019 19:39:39.267 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 8085
+26-09-2019 19:39:39.910 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStarted - Started SpringParentsApplication in 24.706 seconds (JVM running for 27.272)
+26-09-2019 19:39:56.726 [nioEventLoopGroup-2-2] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:2285}] to localhost:27017
+26-09-2019 19:39:56.838 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$29 - Found parent Fernanda - $5d8101f800eb36356c23c439
+26-09-2019 19:39:56.839 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$30 - Fernanda
+26-09-2019 19:40:08.244 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+26-09-2019 19:40:08.244 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+26-09-2019 19:40:08.244 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+26-09-2019 19:40:08.245 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+26-09-2019 19:40:08.245 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+26-09-2019 19:40:08.245 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: false
+26-09-2019 19:40:08.245 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+26-09-2019 19:40:08.634 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+26-09-2019 19:40:38.916 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+26-09-2019 19:40:38.918 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+26-09-2019 19:40:38.919 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+26-09-2019 19:40:38.920 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+26-09-2019 19:40:38.921 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+26-09-2019 19:40:38.922 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+26-09-2019 19:40:38.923 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+26-09-2019 19:40:38.924 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+26-09-2019 19:40:38.925 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+26-09-2019 19:40:38.926 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+26-09-2019 19:40:38.927 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+26-09-2019 19:40:38.928 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+26-09-2019 19:40:38.929 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+26-09-2019 19:40:38.929 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+26-09-2019 19:40:38.930 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+26-09-2019 19:40:38.931 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+26-09-2019 19:40:38.932 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+26-09-2019 19:40:38.933 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+26-09-2019 19:40:38.934 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+26-09-2019 19:40:38.935 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+26-09-2019 19:41:12.925 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-09-2019 19:41:12.926 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS with eureka with status DOWN
+26-09-2019 19:41:12.926 [RMI TCP Connection(12)-127.0.0.1] WARN  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569544872926, current=DOWN, previous=UP]
+26-09-2019 19:41:12.927 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+26-09-2019 19:41:12.970 [RMI TCP Connection(12)-127.0.0.1] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:2285}] to localhost:27017 because the pool has been closed.
+26-09-2019 19:41:13.122 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+26-09-2019 19:41:15.299 [RMI TCP Connection(12)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+26-09-2019 19:41:18.301 [RMI TCP Connection(12)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+26-09-2019 19:41:18.378 [RMI TCP Connection(12)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - deregister  status: 200
+26-09-2019 19:41:18.445 [RMI TCP Connection(12)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+26-09-2019 19:42:26.579 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+26-09-2019 19:42:28.102 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+26-09-2019 19:42:28.183 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 76ms. Found 1 repository interfaces.
+26-09-2019 19:42:28.191 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+26-09-2019 19:42:28.197 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+26-09-2019 19:42:28.423 [restartedMain] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+26-09-2019 19:42:28.923 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=6acbd9f3-1bb3-316e-b810-6899ae7d7a28
+26-09-2019 19:42:29.221 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4decebb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-09-2019 19:42:29.229 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$30691337] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-09-2019 19:42:30.418 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+26-09-2019 19:42:31.218 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+26-09-2019 19:42:31.219 [restartedMain] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:27017 to client view of cluster
+26-09-2019 19:42:31.252 [cluster-ClusterId{value='5d8d5af7b6195b2ecc3b8909', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:2286}] to localhost:27017
+26-09-2019 19:42:31.258 [cluster-ClusterId{value='5d8d5af7b6195b2ecc3b8909', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3548312}
+26-09-2019 19:42:31.260 [cluster-ClusterId{value='5d8d5af7b6195b2ecc3b8909', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+26-09-2019 19:42:31.681 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer - Unable to start LiveReload server
+26-09-2019 19:42:31.771 [cluster-ClusterId{value='5d8d5af6b6195b2ecc3b8908', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2287}] to localhost:27017
+26-09-2019 19:42:31.774 [cluster-ClusterId{value='5d8d5af6b6195b2ecc3b8908', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3103184}
+26-09-2019 19:42:33.670 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+26-09-2019 19:42:33.671 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26-09-2019 19:42:33.692 [restartedMain] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@50ed40d0
+26-09-2019 19:42:33.909 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+26-09-2019 19:42:34.134 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+26-09-2019 19:42:34.134 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26-09-2019 19:42:36.613 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+26-09-2019 19:42:36.670 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+26-09-2019 19:42:36.779 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+26-09-2019 19:42:36.780 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+26-09-2019 19:42:36.972 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+26-09-2019 19:42:36.972 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+26-09-2019 19:42:37.176 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+26-09-2019 19:42:37.552 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+26-09-2019 19:42:37.553 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+26-09-2019 19:42:37.553 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+26-09-2019 19:42:37.554 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+26-09-2019 19:42:37.554 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+26-09-2019 19:42:37.554 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+26-09-2019 19:42:37.555 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+26-09-2019 19:42:37.716 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+26-09-2019 19:42:37.720 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+26-09-2019 19:42:37.724 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+26-09-2019 19:42:37.731 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1569544957730 with initial instances count: 0
+26-09-2019 19:42:37.739 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-PARENTS with eureka with status UP
+26-09-2019 19:42:37.741 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569544957741, current=UP, previous=STARTING]
+26-09-2019 19:42:37.744 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+26-09-2019 19:42:37.744 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+26-09-2019 19:42:37.755 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+26-09-2019 19:42:37.831 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+26-09-2019 19:42:37.837 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+26-09-2019 19:42:38.533 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer.start - Netty started on port(s): 8085
+26-09-2019 19:42:38.535 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 8085
+26-09-2019 19:42:39.109 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStarted - Started SpringParentsApplication in 17.188 seconds (JVM running for 18.968)
+26-09-2019 19:42:52.616 [nioEventLoopGroup-2-2] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:2288}] to localhost:27017
+26-09-2019 19:42:52.648 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+26-09-2019 19:42:52.650 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+26-09-2019 19:42:52.650 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+26-09-2019 19:42:52.651 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+26-09-2019 19:42:52.652 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+26-09-2019 19:42:52.652 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+26-09-2019 19:42:52.653 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+26-09-2019 19:42:52.653 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+26-09-2019 19:42:52.654 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+26-09-2019 19:42:52.655 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+26-09-2019 19:42:52.655 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+26-09-2019 19:42:52.656 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+26-09-2019 19:42:52.657 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+26-09-2019 19:42:52.657 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+26-09-2019 19:42:52.658 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+26-09-2019 19:42:52.659 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+26-09-2019 19:42:52.660 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+26-09-2019 19:42:52.661 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+26-09-2019 19:42:52.662 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+26-09-2019 19:42:52.663 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+26-09-2019 19:42:57.044 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$5 - Found parent Carmen - $5d8101c800eb36356c23c437
+26-09-2019 19:42:57.045 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$6 - Carmen
+26-09-2019 19:43:07.721 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+26-09-2019 19:43:07.722 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+26-09-2019 19:43:07.723 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+26-09-2019 19:43:07.723 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+26-09-2019 19:43:07.723 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+26-09-2019 19:43:07.723 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: false
+26-09-2019 19:43:07.723 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+26-09-2019 19:43:08.252 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+26-09-2019 19:43:18.868 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$18 - Found parent by numberID Carmen - $20190711
+26-09-2019 19:43:26.020 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$21 - Found parent by name Carmen - $20190711
+26-09-2019 19:43:26.021 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$22 - Done!
+26-09-2019 19:43:32.692 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Rocio - $20150711
+26-09-2019 19:43:32.693 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Sarai - $20140711
+26-09-2019 19:43:32.694 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Flor - $20130711
+26-09-2019 19:43:32.695 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Ana - $20120711
+26-09-2019 19:43:32.696 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Doris - $20110711
+26-09-2019 19:43:32.696 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Lucia - $20100711
+26-09-2019 19:43:32.697 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Hernesto - $20090711
+26-09-2019 19:43:32.698 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Hector - $20080711
+26-09-2019 19:43:32.698 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$26 - Done!
+26-09-2019 19:47:37.571 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+26-09-2019 19:48:16.445 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-09-2019 19:48:16.459 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS with eureka with status DOWN
+26-09-2019 19:48:16.461 [RMI TCP Connection(14)-127.0.0.1] WARN  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569545296461, current=DOWN, previous=UP]
+26-09-2019 19:48:16.462 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+26-09-2019 19:48:16.487 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+26-09-2019 19:48:16.553 [RMI TCP Connection(14)-127.0.0.1] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:2288}] to localhost:27017 because the pool has been closed.
+26-09-2019 19:48:18.798 [RMI TCP Connection(14)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+26-09-2019 19:48:21.801 [RMI TCP Connection(14)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+26-09-2019 19:48:21.885 [RMI TCP Connection(14)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - deregister  status: 200
+26-09-2019 19:48:21.915 [RMI TCP Connection(14)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+26-09-2019 19:48:38.946 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+26-09-2019 19:48:40.722 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+26-09-2019 19:48:40.820 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 93ms. Found 1 repository interfaces.
+26-09-2019 19:48:40.830 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+26-09-2019 19:48:40.839 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+26-09-2019 19:48:41.007 [restartedMain] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+26-09-2019 19:48:41.416 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=6acbd9f3-1bb3-316e-b810-6899ae7d7a28
+26-09-2019 19:48:41.829 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$22cf996b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-09-2019 19:48:41.837 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$54bc0f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-09-2019 19:48:43.013 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+26-09-2019 19:48:43.879 [restartedMain] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+26-09-2019 19:48:43.880 [restartedMain] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:27017 to client view of cluster
+26-09-2019 19:48:43.949 [cluster-ClusterId{value='5d8d5c6bb6195b09c4e7a47f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:2289}] to localhost:27017
+26-09-2019 19:48:43.957 [cluster-ClusterId{value='5d8d5c6bb6195b09c4e7a47f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3646363}
+26-09-2019 19:48:43.962 [cluster-ClusterId{value='5d8d5c6bb6195b09c4e7a47f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+26-09-2019 19:48:44.012 [cluster-ClusterId{value='5d8d5c6bb6195b09c4e7a47e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2290}] to localhost:27017
+26-09-2019 19:48:44.015 [cluster-ClusterId{value='5d8d5c6bb6195b09c4e7a47e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2268311}
+26-09-2019 19:48:44.222 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer - Unable to start LiveReload server
+26-09-2019 19:48:45.990 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+26-09-2019 19:48:45.991 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26-09-2019 19:48:46.013 [restartedMain] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5e2d6a1d
+26-09-2019 19:48:46.214 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+26-09-2019 19:48:46.390 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+26-09-2019 19:48:46.391 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26-09-2019 19:48:48.513 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+26-09-2019 19:48:48.674 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+26-09-2019 19:48:48.794 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+26-09-2019 19:48:48.795 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+26-09-2019 19:48:49.257 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+26-09-2019 19:48:49.257 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+26-09-2019 19:48:49.483 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+26-09-2019 19:48:49.949 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+26-09-2019 19:48:49.950 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+26-09-2019 19:48:49.951 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+26-09-2019 19:48:49.952 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+26-09-2019 19:48:49.952 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+26-09-2019 19:48:49.953 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+26-09-2019 19:48:49.954 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+26-09-2019 19:48:50.289 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+26-09-2019 19:48:50.293 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+26-09-2019 19:48:50.297 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+26-09-2019 19:48:50.364 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1569545330302 with initial instances count: 0
+26-09-2019 19:48:50.369 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-PARENTS with eureka with status UP
+26-09-2019 19:48:50.370 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569545330370, current=UP, previous=STARTING]
+26-09-2019 19:48:50.374 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+26-09-2019 19:48:50.376 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+26-09-2019 19:48:50.468 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+26-09-2019 19:48:50.545 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+26-09-2019 19:48:50.904 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+26-09-2019 19:48:51.240 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer.start - Netty started on port(s): 8085
+26-09-2019 19:48:51.242 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 8085
+26-09-2019 19:48:51.789 [restartedMain] INFO  c.e.p.app.SpringParentsApplication.logStarted - Started SpringParentsApplication in 18.337 seconds (JVM running for 19.755)
+26-09-2019 19:49:16.844 [nioEventLoopGroup-2-2] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:2291}] to localhost:27017
+26-09-2019 19:49:16.926 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARMEN
+26-09-2019 19:49:16.927 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SOLANGEL
+26-09-2019 19:49:16.928 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FERNANDA
+26-09-2019 19:49:16.929 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - MARIANA
+26-09-2019 19:49:16.929 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROCIO
+26-09-2019 19:49:16.930 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SARAI
+26-09-2019 19:49:16.931 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - FLOR
+26-09-2019 19:49:16.932 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANA
+26-09-2019 19:49:16.933 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DORIS
+26-09-2019 19:49:16.934 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - LUCIA
+26-09-2019 19:49:16.936 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HERNESTO
+26-09-2019 19:49:16.937 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - HECTOR
+26-09-2019 19:49:16.938 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - CARLOS
+26-09-2019 19:49:16.939 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RONALDO
+26-09-2019 19:49:16.940 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DAVID
+26-09-2019 19:49:16.941 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - DANIEL
+26-09-2019 19:49:16.946 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - SANDROX
+26-09-2019 19:49:16.947 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ROMINA
+26-09-2019 19:49:16.947 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - B
+26-09-2019 19:49:16.948 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - D
+26-09-2019 19:49:20.031 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$5 - Found parent Carmen - $5d8101c800eb36356c23c437
+26-09-2019 19:49:20.032 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$6 - Carmen
+26-09-2019 19:49:20.295 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+26-09-2019 19:49:20.297 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+26-09-2019 19:49:20.298 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+26-09-2019 19:49:20.299 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+26-09-2019 19:49:20.300 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+26-09-2019 19:49:20.301 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: false
+26-09-2019 19:49:20.302 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+26-09-2019 19:49:20.340 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+26-09-2019 19:49:23.392 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$18 - Found parent by numberID Carmen - $20190711
+26-09-2019 19:49:25.715 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$21 - Found parent by name Carmen - $20190711
+26-09-2019 19:49:25.716 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$22 - Done!
+26-09-2019 19:49:28.286 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Rocio - $20150711
+26-09-2019 19:49:28.287 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Sarai - $20140711
+26-09-2019 19:49:28.289 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Flor - $20130711
+26-09-2019 19:49:28.290 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Ana - $20120711
+26-09-2019 19:49:28.291 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Doris - $20110711
+26-09-2019 19:49:28.292 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Lucia - $20100711
+26-09-2019 19:49:28.293 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Hernesto - $20090711
+26-09-2019 19:49:28.293 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$25 - Found parent betweenbirthdate Hector - $20080711
+26-09-2019 19:49:28.294 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$26 - Done!
+26-09-2019 19:52:20.336 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-09-2019 19:52:20.359 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS with eureka with status DOWN
+26-09-2019 19:52:20.361 [RMI TCP Connection(13)-127.0.0.1] WARN  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569545540361, current=DOWN, previous=UP]
+26-09-2019 19:52:20.363 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085: registering service...
+26-09-2019 19:52:20.426 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - registration status: 204
+26-09-2019 19:52:20.438 [RMI TCP Connection(13)-127.0.0.1] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:2291}] to localhost:27017 because the pool has been closed.
+26-09-2019 19:52:22.682 [RMI TCP Connection(13)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+26-09-2019 19:52:25.685 [RMI TCP Connection(13)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+26-09-2019 19:52:25.748 [RMI TCP Connection(13)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-PARENTS/LIM-BF4WDC2.usersad.everis.int:spring-parents:8085 - deregister  status: 200
+26-09-2019 19:52:25.766 [RMI TCP Connection(13)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
