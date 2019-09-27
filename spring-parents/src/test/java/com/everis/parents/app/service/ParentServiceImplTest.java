@@ -52,7 +52,7 @@ public class ParentServiceImplTest {
     parent.setTypeID("DNI");
     parent.setNumberID("55556666");
     parent.setIdFamily("14141414");
-    
+
     when(parentService.findAll()).thenReturn(Flux.just(parent));
     final Flux<Parennt> actua = parentService.findAll();
     assertResults(actua, parent);

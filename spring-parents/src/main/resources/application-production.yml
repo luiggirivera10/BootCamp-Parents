@@ -1,0 +1,6 @@
+logging:
+  file: logs/production_teacher_app.log
+  pattern:
+    file: "%d %-5level [%thread] %logger{0} : %msg%n"
+  level:
+    com.everis.parents.app : WARN

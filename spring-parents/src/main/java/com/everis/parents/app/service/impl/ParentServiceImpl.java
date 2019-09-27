@@ -80,12 +80,17 @@ public Flux<Parennt> findByBirthdateBetween(Date birthdate, Date birthdate1) {
   }
 
   /**
- * Solo para TEST.
+ * Solo para prueba.
  * obtenerPorName.
  */
   @Override
   public Mono<Parennt> findByFullname_par(String fullname) {
     return parenRepository.findByFullname_par(fullname);
+  }
+
+  @Override
+  public Flux<Parennt> findByIdFamily(String idFamily) {
+    return parenRepository.findByIdFamily(idFamily);
   }
 
 }

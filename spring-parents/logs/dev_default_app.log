@@ -1,0 +1,813 @@
+27-09-2019 10:35:10.889 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Fetching config from server at : http://localhost:8888
+27-09-2019 10:35:12.382 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.log - Located environment: name=spring-parents,logparent-default, profiles=[default], label=null, version=6f8de68fa82efad9c0a958dccf0eaa7244630912, state=null
+27-09-2019 10:35:12.383 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration.initialize - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/luiggirivera10/spring-config-server.git/logparent-default.properties'}, MapPropertySource {name='https://github.com/luiggirivera10/spring-config-server.git/spring-parents.properties'}]}
+27-09-2019 11:35:33.914 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Fetching config from server at : http://localhost:8888
+27-09-2019 11:35:35.080 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+27-09-2019 11:35:35.081 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator.locate - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-parents,logparent-default/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+27-09-2019 11:35:35.095 [main] INFO  c.e.p.a.s.ParentServiceImplTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+27-09-2019 11:35:36.899 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 11:35:37.130 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 222ms. Found 1 repository interfaces.
+27-09-2019 11:35:37.141 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 11:35:37.157 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+27-09-2019 11:35:37.351 [main] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+27-09-2019 11:35:37.920 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=26587d93-5c06-3271-a848-da39b4ffab02
+27-09-2019 11:35:38.579 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e08ddcda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 11:35:38.599 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$c30a0460] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 11:35:39.707 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 11:35:40.513 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 11:35:40.605 [cluster-ClusterId{value='5d8e3a5cb6195b2a307f05ac', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:2346}] to localhost:27017
+27-09-2019 11:35:40.621 [cluster-ClusterId{value='5d8e3a5cb6195b2a307f05ac', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11123706}
+27-09-2019 11:35:41.075 [cluster-ClusterId{value='5d8e3a5bb6195b2a307f05ab', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2347}] to localhost:27017
+27-09-2019 11:35:41.091 [cluster-ClusterId{value='5d8e3a5bb6195b2a307f05ab', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 0]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14825044}
+27-09-2019 11:35:44.202 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 11:35:44.203 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 11:35:44.236 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@54f69311
+27-09-2019 11:35:44.663 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+27-09-2019 11:35:45.292 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 11:35:45.293 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 11:35:48.769 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+27-09-2019 11:35:48.782 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+27-09-2019 11:35:48.857 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+27-09-2019 11:35:49.254 [main] INFO  c.e.p.a.s.ParentServiceImplTest.logStarted - Started ParentServiceImplTest in 17.86 seconds (JVM running for 20.707)
+27-09-2019 11:35:49.513 [Thread-8] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+27-09-2019 11:35:49.525 [Thread-8] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS,LOGPARENT-DEFAULT with eureka with status DOWN
+27-09-2019 14:06:35.215 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Fetching config from server at : http://localhost:8888
+27-09-2019 14:06:36.531 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+27-09-2019 14:06:36.533 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator.locate - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-parents,logparent-default/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+27-09-2019 14:06:36.626 [main] INFO  c.e.p.a.c.ParentRestControllerTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+27-09-2019 14:06:40.262 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 14:06:40.793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 509ms. Found 1 repository interfaces.
+27-09-2019 14:06:40.803 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 14:06:40.815 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+27-09-2019 14:06:41.189 [main] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+27-09-2019 14:06:42.236 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=aad05874-099a-3033-bf1b-315174e5a4f9
+27-09-2019 14:06:43.536 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cdab8d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 14:06:43.557 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$b027b508] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 14:06:46.725 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - note: noprealloc may hurt performance in many applications
+27-09-2019 14:06:46.847 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.845-0500 I CONTROL  [initandlisten] MongoDB starting : pid=13972 port=56147 dbpath=C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-cf6e53ce-fc14-48ff-bc19-9ebbb2e5edc1 64-bit host=LIM-BF4WDC2
+27-09-2019 14:06:46.847 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+27-09-2019 14:06:46.848 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] db version v3.5.5
+27-09-2019 14:06:46.848 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+27-09-2019 14:06:46.849 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+27-09-2019 14:06:46.849 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] modules: none
+27-09-2019 14:06:46.850 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] build environment:
+27-09-2019 14:06:46.850 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten]     distarch: x86_64
+27-09-2019 14:06:46.851 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+27-09-2019 14:06:46.851 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.847-0500 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 56147 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-cf6e53ce-fc14-48ff-bc19-9ebbb2e5edc1", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+27-09-2019 14:06:46.898 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:46.898-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3525M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+27-09-2019 14:06:48.161 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:48.161-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+27-09-2019 14:06:48.162 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:48.161-0500 I CONTROL  [initandlisten] 
+27-09-2019 14:06:48.163 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:48.161-0500 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+27-09-2019 14:06:48.163 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:48.161-0500 I CONTROL  [initandlisten] **       Not recommended for production.
+27-09-2019 14:06:48.164 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:48.162-0500 I CONTROL  [initandlisten] 
+27-09-2019 14:06:49.637 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:49.637-0500 W FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'El objeto especificado no se encontró en el equipo.' for counter '\Memory\Available Bytes'
+27-09-2019 14:06:49.639 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:49.637-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/LRIVERAS/AppData/Local/Temp/embedmongo-db-cf6e53ce-fc14-48ff-bc19-9ebbb2e5edc1/diagnostic.data'
+27-09-2019 14:06:50.194 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:50.195-0500 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+27-09-2019 14:06:50.195 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:50.195-0500 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+27-09-2019 14:06:50.227 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:50.227-0500 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+27-09-2019 14:06:50.242 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:50.242-0500 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+27-09-2019 14:06:50.243 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:50.243-0500 I NETWORK  [thread1] waiting for connections on port 56147
+27-09-2019 14:06:50.244 [main] INFO  d.f.embed.mongo.MongodExecutable.start - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@578ddb54
+27-09-2019 14:06:51.513 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:56147], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 14:06:54.424 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:54.424-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56169 #1 (1 connection now open)
+27-09-2019 14:06:55.338 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:55.338-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:56169 conn1: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:06:55.753 [cluster-ClusterId{value='5d8e5dcbb6195b37ec919b51', description='null'}-localhost:56147] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:56147
+27-09-2019 14:06:55.855 [cluster-ClusterId{value='5d8e5dcbb6195b37ec919b51', description='null'}-localhost:56147] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:56147, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=7565958}
+27-09-2019 14:06:56.759 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:56147], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 14:06:56.760 [main] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:56147 to client view of cluster
+27-09-2019 14:06:56.996 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:56.996-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56172 #2 (2 connections now open)
+27-09-2019 14:06:57.004 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:06:57.004-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:56172 conn2: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:06:57.012 [cluster-ClusterId{value='5d8e5dd0b6195b37ec919b52', description='null'}-localhost:56147] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:56147
+27-09-2019 14:06:57.014 [cluster-ClusterId{value='5d8e5dd0b6195b37ec919b52', description='null'}-localhost:56147] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:56147, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1454361}
+27-09-2019 14:06:57.015 [cluster-ClusterId{value='5d8e5dd0b6195b37ec919b52', description='null'}-localhost:56147] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+27-09-2019 14:07:06.807 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 14:07:06.808 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 14:07:06.897 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@68c21071
+27-09-2019 14:07:07.679 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+27-09-2019 14:07:08.439 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 14:07:08.440 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 14:07:21.256 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+27-09-2019 14:07:21.267 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+27-09-2019 14:07:21.665 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+27-09-2019 14:07:22.397 [main] INFO  o.s.b.w.e.netty.NettyWebServer.start - Netty started on port(s): 56200
+27-09-2019 14:07:22.399 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 56200
+27-09-2019 14:07:22.471 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+27-09-2019 14:07:22.695 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+27-09-2019 14:07:22.905 [main] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON encoding codec LegacyJacksonJson
+27-09-2019 14:07:22.911 [main] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using JSON decoding codec LegacyJacksonJson
+27-09-2019 14:07:23.293 [main] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML encoding codec XStreamXml
+27-09-2019 14:07:23.293 [main] INFO  c.n.d.p.DiscoveryJerseyProvider.<init> - Using XML decoding codec XStreamXml
+27-09-2019 14:07:23.887 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+27-09-2019 14:07:24.703 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+27-09-2019 14:07:24.704 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+27-09-2019 14:07:24.706 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+27-09-2019 14:07:24.707 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+27-09-2019 14:07:24.708 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+27-09-2019 14:07:24.709 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+27-09-2019 14:07:24.709 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+27-09-2019 14:07:26.946 [main] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1069) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:983) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:430) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:276) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:272) [eureka-client-1.9.13.jar:1.9.13]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:330) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$d51486a1.CGLIB$eurekaClient$0(<generated>) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$d51486a1$$FastClassBySpringCGLIB$$68d1ade4.invoke(<generated>) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) [spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$d51486a1.eurekaClient(<generated>) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:356) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:353) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:129) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:117) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:499) ~[spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$38a491d3.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:147) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:132) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.finishRefresh(ReactiveWebServerApplicationContext.java:118) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 107 common frames omitted
+27-09-2019 14:07:26.949 [main] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+27-09-2019 14:07:26.953 [main] ERROR c.netflix.discovery.DiscoveryClient.fetchRegistry - DiscoveryClient_SPRING-PARENTS,LOGPARENT-DEFAULT/LIM-BF4WDC2.usersad.everis.int:spring-parents,logparent-default:0 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1069) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:983) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:430) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:276) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:272) [eureka-client-1.9.13.jar:1.9.13]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:330) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$d51486a1.CGLIB$eurekaClient$0(<generated>) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$d51486a1$$FastClassBySpringCGLIB$$68d1ade4.invoke(<generated>) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) [spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$d51486a1.eurekaClient(<generated>) [spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:356) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:353) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:129) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:117) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:499) ~[spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$38a491d3.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:147) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:132) ~[spring-cloud-netflix-eureka-client-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.finishRefresh(ReactiveWebServerApplicationContext.java:118) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
+27-09-2019 14:07:26.956 [main] WARN  c.netflix.discovery.DiscoveryClient.get - Using default backup registry implementation which does not do anything.
+27-09-2019 14:07:26.960 [main] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+27-09-2019 14:07:26.966 [main] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+27-09-2019 14:07:26.973 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1569611246972 with initial instances count: 0
+27-09-2019 14:07:26.985 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-PARENTS,LOGPARENT-DEFAULT with eureka with status UP
+27-09-2019 14:07:26.988 [main] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569611246988, current=UP, previous=STARTING]
+27-09-2019 14:07:26.994 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS,LOGPARENT-DEFAULT/LIM-BF4WDC2.usersad.everis.int:spring-parents,logparent-default:0: registering service...
+27-09-2019 14:07:27.512 [main] INFO  c.e.p.a.c.ParentRestControllerTest.logStarted - Started ParentRestControllerTest in 57.307 seconds (JVM running for 61.33)
+27-09-2019 14:07:28.446 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:28.444-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56205 #3 (3 connections now open)
+27-09-2019 14:07:28.462 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:28.462-0500 I NETWORK  [conn3] received client metadata from 127.0.0.1:56205 conn3: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:07:28.474 [nioEventLoopGroup-2-2] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:56147
+27-09-2019 14:07:29.017 [DiscoveryClient-InstanceInfoReplicator-0] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+27-09-2019 14:07:29.018 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+27-09-2019 14:07:29.019 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS,LOGPARENT-DEFAULT/LIM-BF4WDC2.usersad.everis.int:spring-parents,logparent-default:0 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+27-09-2019 14:07:29.020 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.discovery.InstanceInfoReplicator.run - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+27-09-2019 14:07:29.891 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:29.891-0500 I COMMAND  [conn3] command test.parents command: insert { insert: "parents", ordered: true, documents: [ { _id: ObjectId('5d8e5df1b6195b37ec919b53'), fullname: "Rominax", gender: "Femenino", birthdate: new Date(1569542400000), typeID: "DNI", numberID: "00000001", createdAt: new Date(1569611249217), idFamily: "23", _class: "com.everis.parents.app.bean.Parennt" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 363ms
+27-09-2019 14:07:29.898 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$9 - Saved!
+27-09-2019 14:07:29.960 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.everis.parents.app.service.ParentServiceImplTest], using SpringBootContextLoader
+27-09-2019 14:07:29.962 [main] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.everis.parents.app.service.ParentServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+27-09-2019 14:07:29.962 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.everis.parents.app.service.ParentServiceImplTest]: ParentServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+27-09-2019 14:07:30.003 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.everis.parents.app.SpringParentsApplication for test class com.everis.parents.app.service.ParentServiceImplTest
+27-09-2019 14:07:30.017 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+27-09-2019 14:07:30.019 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@347004f6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@36b40e80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@e78565d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b5963a8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6fba8b81, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@796c58f8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@35ea3336, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@253e4200, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1ee323a5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d31319, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6144f316]
+27-09-2019 14:07:32.177 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Fetching config from server at : http://localhost:8888
+27-09-2019 14:07:33.187 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+27-09-2019 14:07:33.187 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator.locate - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-parents,logparent-default/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+27-09-2019 14:07:33.192 [main] INFO  c.e.p.a.s.ParentServiceImplTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+27-09-2019 14:07:34.210 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 14:07:34.248 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 37ms. Found 1 repository interfaces.
+27-09-2019 14:07:34.252 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 14:07:34.262 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+27-09-2019 14:07:34.470 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=484484ea-ead9-3985-811b-d6ab598391a3
+27-09-2019 14:07:34.607 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cdab8d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 14:07:34.622 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$b027b508] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 14:07:36.275 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - note: noprealloc may hurt performance in many applications
+27-09-2019 14:07:36.439 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.437-0500 I CONTROL  [initandlisten] MongoDB starting : pid=14648 port=56223 dbpath=C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-84ef6b88-6e2a-45b7-bc24-c4a89ca8f646 64-bit host=LIM-BF4WDC2
+27-09-2019 14:07:36.440 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+27-09-2019 14:07:36.441 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] db version v3.5.5
+27-09-2019 14:07:36.441 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+27-09-2019 14:07:36.442 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+27-09-2019 14:07:36.443 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] modules: none
+27-09-2019 14:07:36.443 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] build environment:
+27-09-2019 14:07:36.443 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten]     distarch: x86_64
+27-09-2019 14:07:36.444 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+27-09-2019 14:07:36.444 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.439-0500 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 56223 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-84ef6b88-6e2a-45b7-bc24-c4a89ca8f646", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+27-09-2019 14:07:36.468 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:36.468-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3525M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+27-09-2019 14:07:37.542 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:37.542-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+27-09-2019 14:07:37.543 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:37.543-0500 I CONTROL  [initandlisten] 
+27-09-2019 14:07:37.543 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:37.543-0500 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+27-09-2019 14:07:37.543 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:37.543-0500 I CONTROL  [initandlisten] **       Not recommended for production.
+27-09-2019 14:07:37.544 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:37.543-0500 I CONTROL  [initandlisten] 
+27-09-2019 14:07:38.870 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:38.870-0500 W FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'El objeto especificado no se encontró en el equipo.' for counter '\Memory\Available Bytes'
+27-09-2019 14:07:38.871 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:38.870-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/LRIVERAS/AppData/Local/Temp/embedmongo-db-84ef6b88-6e2a-45b7-bc24-c4a89ca8f646/diagnostic.data'
+27-09-2019 14:07:39.396 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.396-0500 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+27-09-2019 14:07:39.396 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.396-0500 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+27-09-2019 14:07:39.428 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.429-0500 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+27-09-2019 14:07:39.430 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.430-0500 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+27-09-2019 14:07:39.431 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.431-0500 I NETWORK  [thread1] waiting for connections on port 56223
+27-09-2019 14:07:39.431 [main] INFO  d.f.embed.mongo.MongodExecutable.start - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@51ec4cbd
+27-09-2019 14:07:39.467 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:56223], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 14:07:39.472 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.472-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56252 #1 (1 connection now open)
+27-09-2019 14:07:39.480 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.480-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:56252 conn1: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:07:39.507 [cluster-ClusterId{value='5d8e5dfbb6195b37ec919b54', description='null'}-localhost:56223] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:4, serverValue:1}] to localhost:56223
+27-09-2019 14:07:39.520 [cluster-ClusterId{value='5d8e5dfbb6195b37ec919b54', description='null'}-localhost:56223] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:56223, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=9041242}
+27-09-2019 14:07:39.532 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:56223], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 14:07:39.535 [main] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:56223 to client view of cluster
+27-09-2019 14:07:39.584 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.584-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56253 #2 (2 connections now open)
+27-09-2019 14:07:39.652 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:39.652-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:56253 conn2: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:07:39.657 [cluster-ClusterId{value='5d8e5dfbb6195b37ec919b55', description='null'}-localhost:56223] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:5, serverValue:2}] to localhost:56223
+27-09-2019 14:07:39.659 [cluster-ClusterId{value='5d8e5dfbb6195b37ec919b55', description='null'}-localhost:56223] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:56223, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1570463}
+27-09-2019 14:07:39.661 [cluster-ClusterId{value='5d8e5dfbb6195b37ec919b55', description='null'}-localhost:56223] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+27-09-2019 14:07:42.424 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+27-09-2019 14:07:42.927 [main] WARN  o.s.c.n.a.ArchaiusAutoConfiguration.configureArchaius - Netflix ConfigurationManager has already been installed, unable to re-install
+27-09-2019 14:07:45.087 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+27-09-2019 14:07:45.089 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+27-09-2019 14:07:45.109 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+27-09-2019 14:07:45.401 [main] INFO  c.e.p.a.s.ParentServiceImplTest.logStarted - Started ParentServiceImplTest in 14.405 seconds (JVM running for 79.218)
+27-09-2019 14:07:45.591 [Thread-11] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS,LOGPARENT-DEFAULT with eureka with status DOWN
+27-09-2019 14:07:45.592 [Thread-11] WARN  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1569611265592, current=DOWN, previous=UP]
+27-09-2019 14:07:45.593 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS,LOGPARENT-DEFAULT/LIM-BF4WDC2.usersad.everis.int:spring-parents,logparent-default:0: registering service...
+27-09-2019 14:07:45.605 [Thread-19] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+27-09-2019 14:07:45.637 [Thread-19] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS,LOGPARENT-DEFAULT with eureka with status DOWN
+27-09-2019 14:07:46.204 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:46.204-0500 I -        [conn2] end connection 127.0.0.1:56172 (3 connections now open)
+27-09-2019 14:07:46.207 [Thread-11] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:56147 because the pool has been closed.
+27-09-2019 14:07:46.210 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:46.210-0500 I -        [conn3] end connection 127.0.0.1:56205 (2 connections now open)
+27-09-2019 14:07:46.214 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:46.211-0500 I -        [conn1] end connection 127.0.0.1:56169 (1 connection now open)
+27-09-2019 14:07:46.236 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:46.236-0500 I -        [conn2] end connection 127.0.0.1:56253 (2 connections now open)
+27-09-2019 14:07:46.239 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:46.239-0500 I -        [conn1] end connection 127.0.0.1:56252 (1 connection now open)
+27-09-2019 14:07:47.804 [DiscoveryClient-InstanceInfoReplicator-0] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+27-09-2019 14:07:47.805 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+27-09-2019 14:07:47.806 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-PARENTS,LOGPARENT-DEFAULT/LIM-BF4WDC2.usersad.everis.int:spring-parents,logparent-default:0 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+27-09-2019 14:07:47.807 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.discovery.InstanceInfoReplicator.run - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+27-09-2019 14:07:48.461 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.460-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56257 #4 (1 connection now open)
+27-09-2019 14:07:48.461 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.461-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56256 #3 (1 connection now open)
+27-09-2019 14:07:48.464 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.464-0500 I COMMAND  [conn4] terminating, shutdown command received
+27-09-2019 14:07:48.465 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.464-0500 I NETWORK  [conn4] shutdown: going to close listening sockets...
+27-09-2019 14:07:48.466 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.464-0500 I NETWORK  [conn4] closing listening socket: 476
+27-09-2019 14:07:48.466 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.464-0500 I NETWORK  [conn4] shutdown: going to flush diaglog...
+27-09-2019 14:07:48.467 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.464-0500 I FTDC     [conn4] Shutting down full-time diagnostic data capture
+27-09-2019 14:07:48.468 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.468-0500 I COMMAND  [conn3] terminating, shutdown command received
+27-09-2019 14:07:48.468 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.468-0500 I NETWORK  [conn3] shutdown: going to close listening sockets...
+27-09-2019 14:07:48.469 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.468-0500 I NETWORK  [conn3] closing listening socket: 484
+27-09-2019 14:07:48.469 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.468-0500 I NETWORK  [conn3] shutdown: going to flush diaglog...
+27-09-2019 14:07:48.470 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.468-0500 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+27-09-2019 14:07:48.484 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.484-0500 I STORAGE  [conn4] WiredTigerKVEngine shutting down
+27-09-2019 14:07:48.486 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:48.486-0500 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+27-09-2019 14:07:49.435 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:49.435-0500 I STORAGE  [conn3] shutdown: removing fs lock...
+27-09-2019 14:07:49.436 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:49.436-0500 I CONTROL  [conn3] now exiting
+27-09-2019 14:07:49.436 [Thread-16] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:49.436-0500 I CONTROL  [conn3] shutting down with code:0
+27-09-2019 14:07:49.581 [Thread-19] WARN  d.f.embed.process.io.file.Files.forceDelete - could not delete C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-84ef6b88-6e2a-45b7-bc24-c4a89ca8f646. Will try to delete it again when program exits.
+27-09-2019 14:07:49.586 [Thread-19] WARN  o.s.b.f.s.DisposableBeanAdapter.invokeCustomDestroyMethod - Destroy method 'stop' on bean with name 'embeddedMongoServer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+27-09-2019 14:07:49.685 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:49.685-0500 I STORAGE  [conn4] shutdown: removing fs lock...
+27-09-2019 14:07:49.686 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:49.686-0500 I CONTROL  [conn4] now exiting
+27-09-2019 14:07:49.686 [Thread-7] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:07:49.686-0500 I CONTROL  [conn4] shutting down with code:0
+27-09-2019 14:07:49.845 [Thread-11] WARN  d.f.embed.process.io.file.Files.forceDelete - could not delete C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-cf6e53ce-fc14-48ff-bc19-9ebbb2e5edc1. Will try to delete it again when program exits.
+27-09-2019 14:07:49.856 [Thread-11] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+27-09-2019 14:07:52.858 [Thread-11] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+27-09-2019 14:07:54.870 [Thread-11] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919) [eureka-client-1.9.13.jar:1.9.13]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1036) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1029) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 42 common frames omitted
+27-09-2019 14:07:54.873 [Thread-11] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+27-09-2019 14:07:54.877 [Thread-11] ERROR c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-PARENTS,LOGPARENT-DEFAULT/LIM-BF4WDC2.usersad.everis.int:spring-parents,logparent-default:0 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941) [eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919) [eureka-client-1.9.13.jar:1.9.13]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1036) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1029) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+27-09-2019 14:07:54.914 [Thread-11] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+27-09-2019 14:35:27.226 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Fetching config from server at : http://localhost:8888
+27-09-2019 14:35:28.401 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator.getRemoteEnvironment - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+27-09-2019 14:35:28.402 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator.locate - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-parents,logparent-default/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+27-09-2019 14:35:28.422 [main] INFO  c.e.p.a.c.ParentControllerTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+27-09-2019 14:35:30.496 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 14:35:30.715 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 209ms. Found 1 repository interfaces.
+27-09-2019 14:35:30.725 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+27-09-2019 14:35:30.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+27-09-2019 14:35:31.052 [main] WARN  o.s.boot.actuate.endpoint.EndpointId.logWarning - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+27-09-2019 14:35:32.218 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=1a37b7a8-d171-3c8e-a965-0b54bfda75f5
+27-09-2019 14:35:33.159 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1e059320] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 14:35:33.198 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$81baa6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-09-2019 14:35:35.593 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - note: noprealloc may hurt performance in many applications
+27-09-2019 14:35:35.643 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.641-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4068 port=53025 dbpath=C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-dcd78072-5436-4a00-b748-c33f2f61a721 64-bit host=LIM-BF4WDC2
+27-09-2019 14:35:35.644 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+27-09-2019 14:35:35.644 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] db version v3.5.5
+27-09-2019 14:35:35.644 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+27-09-2019 14:35:35.645 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+27-09-2019 14:35:35.645 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] modules: none
+27-09-2019 14:35:35.645 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] build environment:
+27-09-2019 14:35:35.646 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten]     distarch: x86_64
+27-09-2019 14:35:35.646 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+27-09-2019 14:35:35.646 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.643-0500 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 53025 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-dcd78072-5436-4a00-b748-c33f2f61a721", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+27-09-2019 14:35:35.655 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:35.655-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3525M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+27-09-2019 14:35:36.602 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:36.602-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+27-09-2019 14:35:36.602 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:36.602-0500 I CONTROL  [initandlisten] 
+27-09-2019 14:35:36.602 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:36.602-0500 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+27-09-2019 14:35:36.603 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:36.602-0500 I CONTROL  [initandlisten] **       Not recommended for production.
+27-09-2019 14:35:36.603 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:36.602-0500 I CONTROL  [initandlisten] 
+27-09-2019 14:35:38.107 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.107-0500 W FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'El objeto especificado no se encontró en el equipo.' for counter '\Memory\Available Bytes'
+27-09-2019 14:35:38.108 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.107-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/LRIVERAS/AppData/Local/Temp/embedmongo-db-dcd78072-5436-4a00-b748-c33f2f61a721/diagnostic.data'
+27-09-2019 14:35:38.749 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.749-0500 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+27-09-2019 14:35:38.750 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.749-0500 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+27-09-2019 14:35:38.774 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.774-0500 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+27-09-2019 14:35:38.795 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.795-0500 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+27-09-2019 14:35:38.795 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:38.795-0500 I NETWORK  [thread1] waiting for connections on port 53025
+27-09-2019 14:35:38.796 [main] INFO  d.f.embed.mongo.MongodExecutable.start - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@341c6ac2
+27-09-2019 14:35:39.630 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:53025], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 14:35:40.543 [main] INFO  org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:53025], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+27-09-2019 14:35:40.545 [main] INFO  org.mongodb.driver.cluster.info - Adding discovered server localhost:53025 to client view of cluster
+27-09-2019 14:35:40.557 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:40.557-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:53057 #1 (1 connection now open)
+27-09-2019 14:35:40.618 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:40.618-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:53057 conn1: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:35:40.645 [cluster-ClusterId{value='5d8e648cb6195b2f24c9e14e', description='null'}-localhost:53025] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:53025
+27-09-2019 14:35:40.651 [cluster-ClusterId{value='5d8e648cb6195b2f24c9e14e', description='null'}-localhost:53025] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:53025, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=3281235}
+27-09-2019 14:35:40.653 [cluster-ClusterId{value='5d8e648cb6195b2f24c9e14e', description='null'}-localhost:53025] INFO  org.mongodb.driver.cluster.info - Discovered cluster type of STANDALONE
+27-09-2019 14:35:41.336 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:41.336-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:53058 #2 (2 connections now open)
+27-09-2019 14:35:41.413 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:41.413-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:53058 conn2: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:35:41.449 [cluster-ClusterId{value='5d8e648bb6195b2f24c9e14d', description='null'}-localhost:53025] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:53025
+27-09-2019 14:35:41.457 [cluster-ClusterId{value='5d8e648bb6195b2f24c9e14d', description='null'}-localhost:53025] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:53025, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=6759393}
+27-09-2019 14:35:45.221 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 14:35:45.222 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 14:35:45.257 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@30e2016a
+27-09-2019 14:35:45.745 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 20 endpoint(s) beneath base path '/actuator'
+27-09-2019 14:35:46.563 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+27-09-2019 14:35:46.564 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+27-09-2019 14:35:51.864 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Documentation plugins bootstrapped
+27-09-2019 14:35:51.871 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.bootstrapDocumentationPlugins - Found 1 custom documentation plugin(s)
+27-09-2019 14:35:51.975 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+27-09-2019 14:35:52.404 [main] INFO  c.e.p.a.c.ParentControllerTest.logStarted - Started ParentControllerTest in 27.951 seconds (JVM running for 29.979)
+27-09-2019 14:35:53.126 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.126-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:53059 #3 (3 connections now open)
+27-09-2019 14:35:53.134 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.134-0500 I NETWORK  [conn3] received client metadata from 127.0.0.1:53059 conn3: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:35:53.142 [nioEventLoopGroup-2-2] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:53025
+27-09-2019 14:35:53.224 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.223-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:53060 #4 (4 connections now open)
+27-09-2019 14:35:53.249 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.249-0500 I NETWORK  [conn4] received client metadata from 127.0.0.1:53060 conn4: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_221-b11" }
+27-09-2019 14:35:53.256 [nioEventLoopGroup-2-3] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:53025
+27-09-2019 14:35:53.845 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.845-0500 I WRITE    [conn3] update test.parents query: { _id: "1" } planSummary: IDHACK update: { _id: "1", fullname: "Andres", gender: "Masculino", birthdate: new Date(1569612953021), typeID: "DNI", numberID: "74306050", idFamily: "101", _class: "com.everis.parents.app.bean.Parennt" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 625ms
+27-09-2019 14:35:53.845 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.845-0500 I WRITE    [conn4] update test.parents query: { _id: "2" } planSummary: IDHACK update: { _id: "2", fullname: "Rodrigo", gender: "Masculino", birthdate: new Date(1569612953021), typeID: "DNI", numberID: "74306051", idFamily: "102", _class: "com.everis.parents.app.bean.Parennt" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 586820 } }, Collection: { acquireCount: { w: 1 } } } 587ms
+27-09-2019 14:35:53.845 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.845-0500 I COMMAND  [conn4] command test.$cmd command: update { update: "parents", ordered: true, updates: [ { q: { _id: "2" }, u: { _id: "2", fullname: "Rodrigo", gender: "Masculino", birthdate: new Date(1569612953021), typeID: "DNI", numberID: "74306051", idFamily: "102", _class: "com.everis.parents.app.bean.Parennt" }, upsert: true } ] } numYields:0 reslen:104 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 586820 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 587ms
+27-09-2019 14:35:53.849 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:53.849-0500 I COMMAND  [conn3] command test.$cmd command: update { update: "parents", ordered: true, updates: [ { q: { _id: "1" }, u: { _id: "1", fullname: "Andres", gender: "Masculino", birthdate: new Date(1569612953021), typeID: "DNI", numberID: "74306050", idFamily: "101", _class: "com.everis.parents.app.bean.Parennt" }, upsert: true } ] } numYields:0 reslen:104 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 630ms
+27-09-2019 14:35:54.300 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$26 - Done!
+27-09-2019 14:35:54.419 [nioEventLoopGroup-2-3] INFO  c.e.p.a.c.ParentRestController.lambda$16 - Deleted!
+27-09-2019 14:35:54.452 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - ANDRES
+27-09-2019 14:35:54.453 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$1 - RODRIGO
+27-09-2019 14:35:54.717 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$13 - Modified!
+27-09-2019 14:35:54.747 [nioEventLoopGroup-2-3] INFO  c.e.p.a.c.ParentRestController.lambda$5 - Found parent Andres - $1
+27-09-2019 14:35:54.748 [nioEventLoopGroup-2-3] INFO  c.e.p.a.c.ParentRestController.lambda$6 - Andres
+27-09-2019 14:35:54.865 [nioEventLoopGroup-2-3] INFO  c.e.p.a.c.ParentRestController.lambda$18 - Found parent by numberID Rodrigo - $74306051
+27-09-2019 14:35:54.920 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$9 - Saved!
+27-09-2019 14:35:54.968 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$29 - Found parent Rodrigo - $2
+27-09-2019 14:35:54.969 [nioEventLoopGroup-2-2] INFO  c.e.p.a.c.ParentRestController.lambda$30 - Rodrigo
+27-09-2019 14:35:55.017 [Thread-8] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+27-09-2019 14:35:55.031 [Thread-8] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-PARENTS,LOGPARENT-DEFAULT with eureka with status DOWN
+27-09-2019 14:35:55.094 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:55.094-0500 I -        [conn1] end connection 127.0.0.1:53057 (4 connections now open)
+27-09-2019 14:35:55.096 [Thread-8] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:4, serverValue:4}] to localhost:53025 because the pool has been closed.
+27-09-2019 14:35:55.101 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:55.101-0500 I -        [conn4] end connection 127.0.0.1:53060 (3 connections now open)
+27-09-2019 14:35:55.102 [Thread-8] INFO  org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:53025 because the pool has been closed.
+27-09-2019 14:35:55.105 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:55.105-0500 I -        [conn3] end connection 127.0.0.1:53059 (2 connections now open)
+27-09-2019 14:35:55.108 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:55.108-0500 I -        [conn2] end connection 127.0.0.1:53058 (1 connection now open)
+27-09-2019 14:35:57.414 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.414-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:53063 #5 (1 connection now open)
+27-09-2019 14:35:57.418 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.418-0500 I COMMAND  [conn5] terminating, shutdown command received
+27-09-2019 14:35:57.419 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.418-0500 I NETWORK  [conn5] shutdown: going to close listening sockets...
+27-09-2019 14:35:57.419 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.418-0500 I NETWORK  [conn5] closing listening socket: 452
+27-09-2019 14:35:57.420 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.418-0500 I NETWORK  [conn5] shutdown: going to flush diaglog...
+27-09-2019 14:35:57.420 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.418-0500 I FTDC     [conn5] Shutting down full-time diagnostic data capture
+27-09-2019 14:35:57.430 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:57.430-0500 I STORAGE  [conn5] WiredTigerKVEngine shutting down
+27-09-2019 14:35:58.024 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:58.024-0500 I STORAGE  [conn5] shutdown: removing fs lock...
+27-09-2019 14:35:58.024 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:58.024-0500 I CONTROL  [conn5] now exiting
+27-09-2019 14:35:58.025 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:58.024-0500 I CONTROL  [conn5] shutting down with code:0
+27-09-2019 14:35:58.025 [Thread-5] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo.log - 2019-09-27T14:35:58.024-0500 I CONTROL  [initandlisten] shutting down with code:0
+27-09-2019 14:35:58.169 [Thread-8] WARN  d.f.embed.process.io.file.Files.forceDelete - could not delete C:\Users\LRIVERAS\AppData\Local\Temp\embedmongo-db-dcd78072-5436-4a00-b748-c33f2f61a721. Will try to delete it again when program exits.
+27-09-2019 14:35:58.172 [Thread-8] WARN  o.s.b.f.s.DisposableBeanAdapter.invokeCustomDestroyMethod - Destroy method 'stop' on bean with name 'embeddedMongoServer' threw an exception: java.lang.IllegalStateException: Shutdown in progress

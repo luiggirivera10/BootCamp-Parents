@@ -51,4 +51,10 @@ public interface ParentService {
  * obtenerPorName.
  */
   public Mono<Parennt> findByFullname_par(String fullname);
+
+  /**
+   * Demo.
+   */
+  public Flux<Parennt> findByIdFamily(String idFamily);
+  
 }
